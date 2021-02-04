@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" text="text/css" href="css/styles.css" />
+    <link rel="stylesheet" text="text/css" href="css/contato.css" />
+
+    <link rel="stylesheet" href="css/menuHamburguer.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div id="header">
+        <div class="leftSide">
+            <a href="/"><img src="img/logo3.png" class="logo" alt="logo"/></a>            
+        </div>
+        <div class="rightSide">
+            <!-- <ul class="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cardápio</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="/contato">Contato</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reserva</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+              </ul> -->
+
+            <input id="menu-hamburguer" type="checkbox">
+
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cardápio</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contato</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reserva</a>
+                  </li>
+  
+                  <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+        
+            </ul>
+        </div>
+    </div>
+    <form id="form-login" method="POST" action="/users/login">
+        <div>
+            <label for="nome">
+                Nome:
+                <input type="text" name="nome" id="nome">
+            </label>
+        </div>
+        <div>
+            <label for="email">
+                E-mail:
+                <input type="text" name="email" id="email">
+            </label>
+        </div>
+        <div>
+            <label for="story">Mensagem:</label>
+
+            <textarea id="mensagem" name="mensagem" rows="5" cols="46"></textarea>
+        </div>
+        <div class="controles">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <footer id="footer">
+        <div class="footer1">
+            <hr/>
+            <p>Digital Burguer</p>
+        </div>
+        <div>
+            <img src="../img/logoFooter.svg" class="logo" alt="logo"/>
+        </div>
+        <div class="footer2">
+            <hr/>
+            <p>São Paulo | Brasil | 2021</p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
