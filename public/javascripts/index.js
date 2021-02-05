@@ -5,9 +5,9 @@ let allBgs = 3;
 
 function slide(n) {                       
     document.getElementById('imageBg').style.backgroundImage = `url(img/`+n+`.jpg)`;
-
+    document.getElementById('imageBg2').style.backgroundImage = `url(img/`+n+`.png)`;
+    document.getElementById('imageBg3').style.backgroundImage = `url(img/`+n+`.svg)`;
 }
-
 function anterior() {
     if(bgNumber > 1){
         bgNumber--;
