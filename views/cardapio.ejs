@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
-    <link rel="stylesheet" text="text/css" href="css/login.css" />
+    <link rel="stylesheet" text="text/css" href="css/cardapio.css" />
 
     <link rel="stylesheet" href="css/menuHamburguer.css">
 
-    <title>Login</title>
+    <title>Cardápio</title>
 </head>
 <body>
     <div id="header">
@@ -17,28 +17,6 @@
             <a href="/"><img src="img/logo3.png" class="logo" alt="logo"/></a>            
         </div>
         <div class="rightSide">
-            <!-- <ul class="menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cardápio</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="/contato">Contato</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Reserva</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                  </li>
-              </ul> -->
-
             <input id="menu-hamburguer" type="checkbox">
 
             <label for="menu-hamburguer">
@@ -71,25 +49,27 @@
             </ul>
         </div>
     </div>
-    <form id="form-login" method="POST" action="/users/login">
-        <div>
-            <label for="email">
-                E-mail
-                <input type="text" name="email" id="email">
-            </label>
-        </div>
-        <div>
-            <label for="senha">
-                Senha:
-                <input type="password" name="senha" id="senha">
-            </label>
-        </div>
-        <div class="controles">
-            <a href="/adm/forgot">Esqueci minha senha</a>
-            <button type="submit">Entrar</button>
-        </div>
-    </form>
-
+    <div class="wrap">
+        <div class="title">
+            <h1>Cardápio</h1>
+        </div>       
+    </div>
+    <main>        
+        <% for (let burguerSingular of burguers) {%>
+            <span class="cardapio">
+                <span class="topCard">
+                    <img src="img/1-hamburguer.png" class="hamburguerImg" alt="hamburguer"/>
+                    <h3><%= burguerSingular.nome %></h3>
+                    <p><%= burguerSingular.descricao %></p>
+                </span>
+                <span class="bottomCard">
+                    <h5><%=burguerSingular.preco.toLocaleString('pt-br', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) %></h5>
+                    <button>Escolher</button>
+                </span>
+            </span>
+        <% } %>
+        
+    </main>
     <footer id="footer">
         <div class="footer1">
             <hr/>

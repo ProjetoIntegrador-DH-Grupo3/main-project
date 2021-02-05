@@ -1,0 +1,91 @@
+
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #F5C700;
+    color: #000;
+
+    width: 280px;
+    height: 70px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardapio {
+    width: 250px;
+    height: 350px;
+    box-shadow: -3px 1px 13px -2px rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+    border-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    
+}
+
+.topCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.topCard h3 {
+    padding-top: 10px;
+}
+
+.topCard p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.bottomCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 10px;
+}
+
+.bottomCard button {
+    margin-top: 30px;
+    display: block;
+	font-size: 1rem;
+	background-color: #F5C700;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	width: 50%;
+	opacity: 0.8;
+	cursor: pointer;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.bottomCard button:hover {
+    opacity: 1;
+}
