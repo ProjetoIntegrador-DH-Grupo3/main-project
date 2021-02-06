@@ -71,6 +71,32 @@
     
 }
 
+@media (max-width: 554px)
+{
+
+    .cardapio {
+        width: 160px;
+        height: 350px;
+    
+        
+    }
+
+    .topCard img {
+        width: 150px;
+    }
+
+    .topCard p {
+        width: 160px;
+        
+    }
+
+    .bottomCard button {
+        width: auto;
+    }
+
+    
+}
+
 @media (max-width: 414px)
 {
     .contencao {
@@ -97,6 +123,10 @@
     #mensagem {
         width: 275px;
     }
+
+    
+
+    
 }
 
 @media (max-width: 375px)

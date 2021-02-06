@@ -43,6 +43,10 @@ main {
     transition: all 0.3s ease;
 
     
+    overflow: hidden;
+    
+
+    
 }
 
 .topCard {
@@ -69,6 +73,7 @@ main {
     flex-direction: column;
 
     padding-top: 10px;
+    
 }
 
 .bottomCard button {
