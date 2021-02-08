@@ -6,7 +6,7 @@
     display: flex;
     margin-top: 30px;
     margin-right: 30px;
-    background: #2d2d2d;
+    background: black;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -18,13 +18,13 @@
 }
 
 .menu:hover {
-    box-shadow: 0 0 0 8px #F5C700, 0 0 0 8px #F5C700 ;
+    box-shadow: 0 0 0 8px white, 0 0 0 8px #F5C700 ;
 }
 
 .hamburguer {
     position: relative;
     display: block;
-    background: #F5C700;
+    background: white;
     width: 30px;
     height: 2px;
     top: 29px;
@@ -35,7 +35,7 @@
 
 .hamburguer:before,
 .hamburguer:after {
-    background: #F5C700;
+    background: white;
     content: '';
     display: block;
     width: 100%;
@@ -71,7 +71,7 @@ input:checked ~ ul a {
 }
 
 input:checked ~ label .menu {
-    box-shadow: 0 0 0 130vw #F5C700, 0 0 0 160vh #F5C700 ;
+    box-shadow: 0 0 0 130vw rgb(240, 111, 6), 0 0 0 160vh #F5C700 ;
 
 }
 
@@ -90,6 +90,7 @@ input:checked ~ label .hamburguer {
 }
 
 ul {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,9 +107,10 @@ ul {
 }
 
 .nav-link {
+    font-family: 'Bebas Neue', cursive;
     display: block;
     margin-top: 40px;
-    color: #000;
+    color: white;
     font-size: 27px;
     text-decoration: none;
     pointer-events: none;

@@ -11,39 +11,41 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    background-color: #F5C700;
-    color: #000;
+    background-image: linear-gradient(to right, rgb(255, 165, 0),rgb(255, 118, 6));
+    color:black;
+    font-family: 'Vast Shadow', cursive;
+    width: 100%;
+    height: 110px;
+    font-size: 40px;
 
-    width: 280px;
-    height: 70px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 30%;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .cardapio {
     width: 250px;
-    height: 350px;
+    height: 400px;
+    
     box-shadow: -3px 1px 13px -2px rgba(0, 0, 0, 0.73);
-    border-radius: 10px;
+    border-radius: 5px;
     border-bottom: 70px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
-
-    
-    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
     
 
     
@@ -73,22 +75,21 @@ main {
     flex-direction: column;
 
     padding-top: 10px;
-    
 }
 
 .bottomCard button {
     margin-top: 30px;
     display: block;
 	font-size: 1rem;
-	background-color: #F5C700;
-	color: #fff;
+	background-image: linear-gradient(to right, rgb(255, 165, 0),rgb(255, 118, 6));
+	color: black;
 	border: none;
 	padding: 10px 20px;
 	width: 50%;
 	opacity: 0.8;
 	cursor: pointer;
-	border-radius: 10px;
-	text-transform: uppercase;
+	border-radius: 3px;
+	/* text-transform: uppercase; */
 }
 
 .bottomCard button:hover {

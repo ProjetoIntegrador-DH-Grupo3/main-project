@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
     <link rel="stylesheet" text="text/css" href="css/login.css" />
 
@@ -74,24 +76,31 @@
     </div>
     <form id="form-login" method="POST" action="/users/login">
         <div>
+            <h2 class="title">Login</h2>
+
             <label for="email">
-                E-mail
-                <input type="text" name="email" id="email">
-            </label>
-        </div>
-        <div>
-            <label for="senha">
-                Senha:
-                <input type="password" name="senha" id="senha">
+                Email
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
             </label>
         </div>
         <div class="controles">
             <a href="/adm/forgot">Esqueci minha senha</a>
-            <button type="submit">Entrar</button>
+        </div>
+        <div>
+            <label for="senha">
+                Senha
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </label>
+        </div>
+        <div class="controles">
+            <label href="/adm/forgot"><input type="checkbox"> Lembre-me</label>
+        </div>
+        <div class="controles">
+            <button type="submit">Acessar</button>
         </div>
     </form>
 
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="footer1 footerOn">
             <hr/>
             <p>Digital Burguer</p>
@@ -107,7 +116,7 @@
             <p>São Paulo | Brasil | 2021</p>
         </div>
         
-    </footer>
+    </footer> -->
 
 </body>
 </html>

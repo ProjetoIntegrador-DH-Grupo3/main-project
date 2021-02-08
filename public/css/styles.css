@@ -9,8 +9,8 @@
 #header {
     width: 100%;
     height: 120px;
-    background: #F5C700;
-    border-bottom: 5px solid #2D2D2D;
+    background-image: linear-gradient(to right, rgb(255, 165, 0),rgb(255, 118, 6));
+    border-bottom: 1px solid white;
     display: flex;
 }
 
@@ -45,12 +45,12 @@
 }
 
 .nav-item a {
+    font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: black;
-    font-family: Inter;
     font-style: normal;
     font-weight: 900;
-    font-size: 22.46px;
+    font-size: 30px;
     line-height: 27px;
 
     padding-right: 30px;
@@ -174,7 +174,15 @@
     color: #F5C700;
 }
 
-#footer {
+/* geral do cadastro */
+
+/* //geral do cadastro */
+
+
+input, label {
+
+}
+/* #footer {
     margin-top: 50px;
     width: 100%;
     height: 250px;
@@ -205,4 +213,41 @@
 
 .footerOff {
     display: none;
+} */
+
+/* Footer */
+.footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+    background-color: rgb(31, 33, 28);
+    color: white;
+    height: 300px;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+  .footer .footer-bottom {
+      background-color: #F5C700;
+      colocar:black;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 15px;
+  }
+
+.socials a i {
+    color: white;
+    font-size: 25px;
 }

@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- font do menu -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- font do cardapio -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
     <link rel="stylesheet" text="text/css" href="css/cardapio.css" />
 
     <link rel="stylesheet" href="css/menuHamburguer.css">
     <link rel="stylesheet" href="css/medias.css">
+
 
     <title>Cardápio</title>
 </head>
@@ -52,7 +61,7 @@
     </div>
     <div class="wrap">
         <div class="title">
-            <h1>Cardápio</h1>
+            <h1> Cardápio </h1>
         </div>       
     </div>
     <main>        
@@ -60,12 +69,12 @@
             <span class="cardapio">
                 <span class="topCard">
                     <img src="img/1-hamburguer.png" class="hamburguerImg" alt="hamburguer"/>
-                    <h3><%= burguerSingular.nome %></h3>
+                    <h2><%= burguerSingular.nome %></h2>
                     <p><%= burguerSingular.descricao %></p>
                 </span>
                 <span class="bottomCard">
-                    <h5><%=burguerSingular.preco.toLocaleString('pt-br', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) %></h5>
-                    <button>Escolher</button>
+                    <h1><%=burguerSingular.preco.toLocaleString('pt-br', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) %></h1>
+                    <button>Adicionar</button>
                 </span>
             </span>
         <% } %>
