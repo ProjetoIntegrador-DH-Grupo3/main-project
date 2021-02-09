@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre {
+    width: 70%;
+    
+    
+    box-shadow: -3px 1px 13px -2px rgba(0, 0, 0, 0.73);
+    border-radius: 5px;
+    border-bottom: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Bebas Neue', cursive;
+    
+
+    
+}
+
+.topCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.topCard h1 {
+    padding-top: 30px;
+}
+
+.topCard p{
+    padding: 20px;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+.bottomCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.bottomCard h2 {
+    text-align: center;
+    width: 70%;
+    padding-left: 100px;
+    
+}
+
+.bottomCard p {
+    text-align: center;
+    width: 70%;
+    padding-left: 100px;
+    padding-top: 30px;
+    line-height: 25px;
+    
+    
+}
+
+.bottomCard img {
+    padding-right: 100px;
+}
+

@@ -7,6 +7,46 @@
         display: flex;
     }
 
+    .BTCard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .part1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .BTCard p, h2 {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .BTCard h2 {
+        padding-left: 0px;
+    }
+
+    .BTCard p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .BTCard img {
+        padding-right: 0px;
+    }
+
     
 }
 
@@ -18,6 +58,8 @@
     #imageBg2 {
         display: flex;
     }
+
+    
 
     
 }
@@ -51,6 +93,23 @@
     }
     .footerOn {
         display: none;
+    }
+
+    .sobre {
+        width: 90%;
+    
+    }
+
+    .TPCard {
+        width: 100%;
+
+    }
+
+
+    .TPCard p {
+        padding-left: 20px;
+        padding-right: 20px;
+        
     }
 
     
@@ -139,4 +198,6 @@
         margin-top: -496px;
 
     }
+
+    
 }

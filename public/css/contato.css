@@ -1,11 +1,13 @@
 #form-login {
 	width: 480px;
 	margin: 5vh auto 0 auto;
-	background-color: #F5C700;
-	color: #000;
+	background-color: #f7f4e7;
+	color:rgb(141, 137, 137);
 	padding: 50px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+	margin-bottom: 30px;
 }
 
 #form-login label {
@@ -61,8 +63,8 @@
 #form-login .controles button{
 	display: block;
 	font-size: 1rem;
-	background-color: #fff;
-	color: #000;
+	background-image: linear-gradient(to right, rgb(255, 165, 0),rgb(255, 118, 6));
+	color: rgb(255, 255, 255);
 	border: none;
 	padding: 10px 20px;
 	width: 50%;

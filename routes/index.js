@@ -20,4 +20,8 @@ router.get('/cardapio', function(req, res, next) {
   res.render('cardapio', { burguers });
 });
 
+router.get('/sobre', function(req, res, next) {
+  res.render('sobre', { title: 'Sobre' });
+});
+
 module.exports = router;
