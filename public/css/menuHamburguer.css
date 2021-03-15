@@ -90,7 +90,6 @@ input:checked ~ label .hamburguer {
 }
 
 ul {
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,13 +100,10 @@ ul {
     transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
     text-transform: uppercase;
     z-index: 9998;
-   
-    
-    
 }
 
 .nav-link {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
     display: block;
     margin-top: 40px;
     color: white;
@@ -117,3 +113,4 @@ ul {
     cursor: default;
     z-index: 9998;
 }
+
