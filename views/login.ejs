@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
     <link rel="stylesheet" text="text/css" href="css/login.css" />
 
     <link rel="stylesheet" href="css/menuHamburguer.css">
     <link rel="stylesheet" href="css/medias.css">
-
-        <!-- font awesome BootstrapCDN-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 
     <title>Login</title>
 </head>
@@ -57,7 +54,7 @@
 
             <ul>
                 <li class="nav-item">
-                    <a class="nav-link" href="/cardapio">Cardápio</a>
+                  <a class="nav-link" href="/cardapio">Cardápio</a>
                   </li>
     
                   <li class="nav-item">
@@ -69,7 +66,7 @@
                   </li>
     
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Reserva</a>
+                    <a class="nav-link" href="/reserva">Reserva</a>
                   </li>
   
                   <li class="nav-item">
@@ -79,13 +76,16 @@
             </ul>
         </div>
     </div>
+
+    <div class="mkd-conainter">
+
     <form id="form-login" method="POST" action="/users/login">
         <div>
-            <h2 class="title">Login</h2>
+            <h3 class="title">Login</h3>
 
             <label for="email">
                 Email
-                <input type="text" name="email" id="email" placeholder="Digite seu email">
+                <input type="text" name="email" id="email" placeholder="Digite seu email" required>
             </label>
         </div>
         <div class="controles">
@@ -94,7 +94,7 @@
         <div>
             <label for="senha">
                 Senha
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
             </label>
         </div>
         <div class="controles">
@@ -103,49 +103,36 @@
         <div class="controles">
             <button type="submit">Acessar</button>
         </div>
+    </div>
+
+
     </form>
 
-    <!-- <footer id="footer">
-        <div class="footer1 footerOn">
-            <hr/>
-            <p>Digital Burguer</p>
-        </div>
-        <div>
-            <img src="img/logoFooter.svg" class="logo" alt="logo"/>
-        </div>
-        <div class="footer1 footerOff">
-          <p>Digital Burguer</p>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-setion about">
+        <h1 class="logo-text"><span>DH</span>
+          BURGER</h1>
       </div>
-        <div class="footer2">
-            <hr/>
-            <p>São Paulo | Brasil | 2021</p>
-        </div>
-        
-    </footer> -->
-
-    <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-setion about">
-            <h1 class="logo-text"><span>DH</span>
-              BURGER</h1>
-          </div>
-          <div class="socials">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-          </div>
-      
-          <div class="footer-setion about"></div>
-          <div class="footer-setion about"></div>
-        </div>
-      
-        <div class="footer-bottom">
-          &copy; Digital Burger | Website made by Groupo 3
-        </div>
-        </div>
-      
-      </footer>
-
+      <div class="socials">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      </div>
+  
+      <div class="footer-setion about"></div>
+      <div class="footer-setion about"></div>
+    </div>
+  
+    <div class="footer-bottom">
+      &copy; Digital Burger | Website made by Groupo 3
+    </div>
+    </div>
+  
+  </footer>
+  
+      <script type="text/javascript" src="javascripts/index.js"></script>
 </body>
 </html>

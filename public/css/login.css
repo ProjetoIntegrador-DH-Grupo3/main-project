@@ -1,24 +1,31 @@
 body {
-	font-family: sans-serif;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
 }
+
+.mkd-conainter{
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/login.jpg');
+	background-size: cover;
+}
+
 
 #form-login {
 	box-shadow: 1px 1px 5p;
 	width: 480px;
 	margin: 5vh auto 0 auto;
-	background-color: #f7f4e7;
+	/* background-color: transparent; */
+	background-color: whitesmoke;
 	color:rgb(141, 137, 137);
 	padding: 40px;
-	border-radius: 5px;
+	border-radius: 3px;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-	
-	margin-bottom: 30px;
 }
 
 .title {
 	margin-bottom: 9px;
 	color:rgb(20, 18, 18);
-
 }
 
 
@@ -87,7 +94,7 @@ body {
 	width: 100%;
 	opacity: 0.8;
 	cursor: pointer;
-	border-radius: 30px;
+	border-radius: 15px;
 	text-transform: uppercase;
 }
 
@@ -103,3 +110,5 @@ body {
 	padding: 20px;
 	text-align: center;
 }
+
+
