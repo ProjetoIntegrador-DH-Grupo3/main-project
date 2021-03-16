@@ -16,8 +16,8 @@ router.get('/contato', function(req, res, next) {
   res.render('contato', { title: 'Contato' });
 });
 
-router.get('/cardapio', function(req, res, next) {
-  res.render('cardapio', { burguers });
+router.get('/menu', function(req, res, next) {
+  res.render('menu', { burguers });
 });
 
 router.get('/sobre', function(req, res, next) {
