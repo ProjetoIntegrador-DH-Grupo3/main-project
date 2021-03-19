@@ -40,8 +40,8 @@
 .nav-item {
     list-style: none;
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: inline;
+    
 }
 
 .nav-item a {

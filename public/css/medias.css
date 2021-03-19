@@ -1,3 +1,4 @@
+
 @media (max-width: 1074px)
 {
     #imageBg {
@@ -45,6 +46,10 @@
 
     .BTCard img {
         padding-right: 0px;
+    }
+
+    #mNormal {
+        display: none;
     }
 
     
@@ -111,6 +116,8 @@
         padding-right: 20px;
         
     }
+
+    
 
     
 }
@@ -197,6 +204,23 @@
     .anterior, .proximo {
         margin-top: -496px;
 
+    }
+
+    
+}
+
+@media (min-width: 1073px) {
+    #mHamburguer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1074px)
+{
+    
+    #mNormal {
+        display: none;
     }
 
     

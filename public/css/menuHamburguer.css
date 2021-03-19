@@ -53,34 +53,34 @@
     bottom: -10px;
 }
 
-input {
+#mHamburguer input {
     display: none;
 }
 
-input:checked ~ ul {
+#mHamburguer input:checked ~ ul {
     opacity: 1;
 
 }
 
 
 
-input:checked ~ ul a {
+ input:checked ~  ul a {
     pointer-events: all;
     cursor: pointer;
 
 }
 
-input:checked ~ label .menu {
+ input:checked ~  label .menu {
     box-shadow: 0 0 0 130vw rgb(240, 111, 6), 0 0 0 160vh #F5C700 ;
 
 }
 
-input:checked ~ label .hamburguer::before {
+ input:checked ~  label .hamburguer::before {
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ label .hamburguer:after {
+ input:checked ~  label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 }
@@ -89,7 +89,7 @@ input:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
 
-ul {
+#mHamburguer ul {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,7 +102,7 @@ ul {
     z-index: 9998;
 }
 
-.nav-link {
+.nav-link1 {
     font-family: 'Poppins', sans-serif;
     display: block;
     margin-top: 40px;
