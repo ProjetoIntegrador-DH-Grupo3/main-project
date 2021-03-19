@@ -19,131 +19,41 @@
     <title>Login</title>
 </head>
 <body>
-    <div id="header">
-        <div class="leftSide">
-            <a href="/"><img src="img/logo3.png" class="logo" alt="logo"/></a>            
-        </div>
-        <div class="rightSide">
-            
-          <div id="mHamburguer">
-            <input id="menu-hamburguer" type="checkbox">
-
-          <label for="menu-hamburguer">
-              <div class="menu">
-                  <span class="hamburguer"></span>
-              </div>
-          </label>
-
-            <ul>
-              <li class="nav-item">
-                  <a class="nav-link1" href="/menu">Menu</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link1" href="/sobre">Sobre</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link1" href="/contato">Contato</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link1" href="#">Reserva</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link1" href="/login">Login</a>
-                  </li>
-      
-            </ul>
-
+    <section>
+      <div class="container">
+        <div class="user siginBx">
+          <div class="imgBx"><img src="img/login1.jpg"></div>
+          <div class="formBx">
+            <form>
+              <h2>Fazer login</h2>
+              <input type="text" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <input type="submit" value="Login">
+              <p class="signup">Não tem uma conta? <a href="#" onclick="toggleForm()"> Cadastre-se</a></p>
+            </form>
           </div>
+        </div>
 
-          <div id="mNormal">
-            <ul>
-              <li class="nav-item">
-                  <a class="nav-link" href="/menu">Menu</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="/sobre">Sobre</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="/contato">Contato</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Reserva</a>
-                </li>
+        <div class="user signupBx">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                  </li>
-      
-            </ul>
+          <div class="formBx">
+            <form>
+              <h2>Criar sua conta</h2>
+              <input type="text" placeholder="Email">
+              <input type="password" placeholder="Create Password">
+              <input type="password" placeholder="Confirm Password">
+              <input type="submit" value="Cadastrar">
+              <p class="signup">Já tem uma conta? <a href="#" onclick="toggleForm()"> Entre.</a></p>
+            </form>
           </div>
+          <div class="imgBx"><img src="img/porta.jpg"></div>
 
-          
+        </div>
       </div>
-    </div>
-
-    <div class="mkd-conainter">
-
-    <form id="form-login" method="POST" action="/users/login">
-        <div>
-            <h3 class="title">Login</h3>
-
-            <label for="email">
-                Email
-                <input type="text" name="email" id="email" placeholder="Digite seu email" required>
-            </label>
-        </div>
-        <div class="controles">
-            <a href="/adm/forgot">Esqueci minha senha</a>
-        </div>
-        <div>
-            <label for="senha">
-                Senha
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-            </label>
-        </div>
-        <div class="controles">
-            <label href="/adm/forgot"><input type="checkbox"> Lembre-me</label>
-        </div>
-        <div class="controles">
-            <button type="submit">Acessar</button>
-        </div>
-    </div>
-
-
-    </form>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-      <div class="footer-setion about">
-        <h1 class="logo-text"><span>DH</span>
-          BURGER</h1>
-      </div>
-      <div class="socials">
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-      </div>
-  
-      <div class="footer-setion about"></div>
-      <div class="footer-setion about"></div>
-    </div>
-  
-    <div class="footer-bottom">
-      &copy; Digital Burger | Website made by Groupo 3
-    </div>
-    </div>
-  
-  </footer>
+</section>
   
       <script type="text/javascript" src="javascripts/index.js"></script>
+
+      <script type="text/javascript" src="javascripts/login.js"></script>
 </body>
 </html>
