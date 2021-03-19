@@ -1,114 +1,171 @@
-body {
-	margin: 0;
-	font-family: 'Poppins', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.mkd-conainter{
-	width: 100%;
-	height: 600px;
-	background-image: url('../img/login.jpg');
-	background-size: cover;
+section {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(219, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
 }
 
-
-#form-login {
-	box-shadow: 1px 1px 5p;
-	width: 480px;
-	margin: 5vh auto 0 auto;
-	/* background-color: transparent; */
-	background-color: whitesmoke;
-	color:rgb(141, 137, 137);
-	padding: 40px;
-	border-radius: 3px;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+section.active {
+    background: rgb(119, 114, 114);
 }
 
-.title {
-	margin-bottom: 9px;
-	color:rgb(20, 18, 18);
+section .container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-
-#form-login label {
-	display: block;
-	margin-bottom: 9px;
-	position: relative;
+section .container .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-#form-login label input {
-	display: block;
-	padding: 10px;
-	border: none;
-	margin-top: 0;
-	font-size: 1rem;
-	height: 35px;
-	border-radius: 5px;
-	outline: 0;
-	width: 100%;
+section .container .user .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
 }
 
-#form-login label img{
-	width: 100%;
-	margin-top: 10px;
-	display: block;
-	cursor: pointer;
-
+section .container .user .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#form-login label input[type="file"]{
-	display: none;
+section .container .user .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+    
 }
 
-#form-login label div{
-	width: 100%;
-	display: block;
-	font-size: 1.rem;
-	background-color: rgba(0, 0, 0,0.5);
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	position: absolute;
-	bottom: 0;
-	cursor: pointer;
-	text-align: center;
+section .container .user .formBx h2{
+    font-size: 22px;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    color:#555;
 }
 
-#form-login .controles{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+section .container .user .formBx input {
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
-#form-login .controles a{
-	font-size: 0.8rem;
+section .container .user .formBx input[type="submit"] {
+    max-width: 100px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
 }
 
-#form-login .controles button{
-	display: block;
-	font-size: 1rem;
-	background-image: linear-gradient(to right, rgb(255, 165, 0),rgb(255, 118, 6));
-	color: rgb(255, 255, 255);
-	border: none;
-	outline: 0;
-	padding: 10px 20px;
-	width: 100%;
-	opacity: 0.8;
-	cursor: pointer;
-	border-radius: 15px;
-	text-transform: uppercase;
+section .container .user.signupBx .formBx input[type="submit"] {
+    /* background: #e73e49; */
+    background: #FECA28;
 }
 
-#form-login .controles button:hover{
-	opacity: 1;
+section .container .user .formBx .signup {
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
-.alert-error{
-	background-color: rgba(100,0,0,0.5);
-	color: #FFF;
-	width: 480px;
-	margin: 20px auto;
-	padding: 20px;
-	text-align: center;
+section .container .user .formBx .signup a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #577eff;
 }
 
+section .container .signupBx {
+    pointer-events: none;
+}
 
+section .container.active .signupBx{
+    pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+    top: 100%;
+}
+
+section .container.active .signupBx .formBx {
+    top: 0;
+}
+
+section .container .signupBx .imgBx {
+    top: -100%;
+    transition: 0.5s;
+}
+
+section .container.active .signupBx .imgBx {
+    top: 0;
+}
+
+section .container .signinBx .formBx {
+    top:0;
+    transition: 0.5s;
+}
+
+section .container.active .signinBx .formBx {
+    top: -100%;
+}
+
+@media (max-width: 911px) {
+    section .container {
+        max-width: 400px;
+    }
+    section .container .imgBx {
+        display: none;
+    }
+    section .container .user .formBx{
+        width: 100%;
+    }
+}
