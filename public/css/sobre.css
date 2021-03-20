@@ -1,4 +1,4 @@
-main {
+/* main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,5 +74,57 @@ main {
 
 .bottomCard img {
     padding-right: 100px;
+} */
+
+/* novo */
+
+
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    font-family: 'Poppins', sans-serif;
 }
 
+.left-col {
+    width: 50%;
+    height: 100vh;
+    background: rgba(255,158,1,1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.left-col img {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.right-col {
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-col h2 {
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.right-col p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 5%;
+    text-align: left;
+}
