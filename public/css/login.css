@@ -104,8 +104,7 @@ section .container .user .formBx input[type="submit"] {
 }
 
 section .container .user.signupBx .formBx input[type="submit"] {
-    /* background: #e73e49; */
-    background: #FECA28;
+    background: rgba(255,158,1,1)
 }
 
 section .container .user .formBx .signup {
