@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- font awesome BootstrapCDN-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- font awesome BootstrapCDN-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
     <link rel="stylesheet" text="text/css" href="css/login.css" />
-    <link rel="stylesheet" href="css/menuHamburguer.css">
-    <link rel="stylesheet" href="css/medias.css">
+    <link rel="stylesheet" href="css/menuHamburguer.css" />
+    <link rel="stylesheet" href="css/medias.css" />
 
     <title>Login</title>
-</head>
-<body>
-  <div id="header">
-    <div class="leftSide">
-        <a href="/"><img src="img/logo3.png" class="logo" alt="logo"/></a>            
-    </div>
-    <div class="rightSide">
-        
+  </head>
+  <body>
+    <div id="header">
+      <div class="leftSide">
+        <a href="/"><img src="img/logo3.png" class="logo" alt="logo" /></a>
+      </div>
+      <div class="rightSide">
         <div id="mHamburguer">
-          <input id="menu-hamburguer" type="checkbox">
+          <input id="menu-hamburguer" type="checkbox" />
 
-        <label for="menu-hamburguer">
+          <label for="menu-hamburguer">
             <div class="menu">
-                <span class="hamburguer"></span>
+              <span class="hamburguer"></span>
             </div>
-        </label>
+          </label>
 
           <ul>
             <li class="nav-item">
-                <a class="nav-link1" href="/menu">Menu</a>
-              </li>
+              <a class="nav-link1" href="/menu">Menu</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link1" href="/sobre">DH burger</a>
-              </li>
-   
-              <li class="nav-item">
-                <a class="nav-link1" href="/contato">Contato</a>
-              </li>
-              
-              <!-- href="/contato">Contato -->
+            <li class="nav-item">
+              <a class="nav-link1" href="/sobre">DH burger</a>
+            </li>
 
-              <!-- <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link1" href="/contato">Contato</a>
+            </li>
+
+            <!-- href="/contato">Contato -->
+
+            <!-- <li class="nav-item">
                 <a class="nav-link1" href="#">Reserva</a>
               </li> -->
 
-              <li class="nav-item">
-                  <a class="nav-link1" href="/login">Login</a>
-                </li>
-    
+            <li class="nav-item">
+              <a class="nav-link1" href="/login">Login</a>
+            </li>
           </ul>
-
         </div>
 
         <div id="mNormal">
           <ul>
             <li class="nav-item">
-                <a class="nav-link" href="/menu">Menu</a>
-              </li>
+              <a class="nav-link" href="/menu">Menu</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/sobre">DH burger</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sobre">DH burger</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/contato">Contato</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contato">Contato</a>
+            </li>
 
-              <!-- <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Reserva</a>
               </li> -->
 
-              <li class="nav-item">
-                  <a class="nav-link" href="/login">Login</a>
-                </li>
-    
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
           </ul>
         </div>
-
-        
+      </div>
     </div>
-</div>
 
     <section>
       <div class="container">
         <div class="user siginBx">
-          <div class="imgBx"><img src="img/login.jpg"></div>
+          <div class="imgBx"><img src="img/login.jpg" /></div>
           <div class="formBx">
             <form>
               <h2>Fazer login</h2>
-              <input type="text" placeholder="Email">
-              <input type="password" placeholder="Password">
-              <input type="submit" value="Login">
-              <p class="signup">Não tem uma conta? <a href="#" onclick="toggleForm()"> Cadastre-se</a></p>
+              <input type="text" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <input type="submit" value="Login" />
+              <p class="signup">
+                Não tem uma conta?
+                <a href="#" onclick="toggleForm()"> Cadastre-se</a>
+              </p>
             </form>
           </div>
         </div>
 
         <div class="user signupBx">
-
           <div class="formBx">
             <form>
               <h2>Criar sua conta</h2>
-              <input type="text" placeholder="Email">
-              <input type="password" placeholder="Create Password">
-              <input type="password" placeholder="Confirm Password">
-              <input type="submit" value="Cadastrar">
-              <p class="signup">Já tem uma conta? <a href="#" onclick="toggleForm()"> Entre.</a></p>
+              <input type="text" placeholder="Email" />
+              <input type="password" placeholder="Create Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <input type="submit" value="Cadastrar" />
+              <p class="signup">
+                Já tem uma conta? <a href="#" onclick="toggleForm()"> Entre.</a>
+              </p>
             </form>
           </div>
-          <div class="imgBx"><img src="img/porta.jpg"></div>
-
+          <div class="imgBx"><img src="img/porta.jpg" /></div>
         </div>
       </div>
-</section>
-  
-      <script type="text/javascript" src="javascripts/index.js"></script>
+    </section>
 
-      <script type="text/javascript" src="javascripts/login.js"></script>
-</body>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+
+    <script type="text/javascript" src="javascripts/login.js"></script>
+  </body>
 </html>
