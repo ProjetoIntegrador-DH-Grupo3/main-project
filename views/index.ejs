@@ -1,96 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-  
-    <!-- font awesome BootstrapCDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- importando a font principal -->
+    <%- include('./partials/mainFont') %> 
+    <!-- importando configurações HEAD e BootstrapCDN -->
+    <%- include('./partials/head') %>  
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menuHamburguer.css">
     <link rel="stylesheet" href="css/medias.css">
 
-<!-- font -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
-    
 
 
     
     <title>Home</title>
 </head>
 <body>
-    <div id="header">
-        <div class="leftSide">
-            <a href="/"><img src="img/logo3.png" class="logo" alt="logo"/></a>            
-        </div>
-        <div class="rightSide">
-            
-            <div id="mHamburguer">
-              <input id="menu-hamburguer" type="checkbox">
+  <!-- importando o header da pasta partials -->
+  <%- include('./partials/header') %> 
 
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-
-              <ul>
-                <li class="nav-item">
-                    <a class="nav-link1" href="/menu">Menu</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link1" href="/sobre">DH burger</a>>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link1" href="/contato">Contato</a>
-                  </li>
-    
-                  <!-- <li class="nav-item">
-                    <a class="nav-link1" href="#">Reserva</a>
-                  </li> -->
-  
-                  <li class="nav-item">
-                      <a class="nav-link1" href="/login">Login</a>
-                    </li>
-        
-              </ul>
-
-            </div>
-
-            <div id="mNormal">
-              <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="/menu">Menu</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link" href="/sobre">DH burger</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contato">Contato</a>
-                  </li>
-    
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Reserva</a>
-                  </li> -->
-  
-                  <li class="nav-item">
-                      <a class="nav-link" href="/login">Login</a>
-                    </li>
-        
-              </ul>
-            </div>
-
-            
-        </div>
-    </div>
     <main>
+      <!-- carrossel -->
         <div class="contencao">
             <div id="imageBg"></div>
             <div id="imageBg2"></div>
@@ -148,7 +79,7 @@
         </div>
 
         <div class="container">
-          <div class="formBx">
+          <div class="formBx" id="formBx" >
               <form action="">
                   <h2>Contato</h2>
                   <div class="inputBox">
@@ -172,49 +103,10 @@
 
     </main>
 
-<!-- footer do fernando -->
-    <!-- <footer id="footer">
-        <div class="footer1 footerOn">
-            <hr/>
-            <p>Digital Burguer</p>
-        </div>
-        <div>
-            <img src="img/logoFooter.svg" class="logo" alt="logo"/>
-        </div>
-        <div class="footer1 footerOff">
-          <p>Digital Burguer</p>
-      </div>
-        <div class="footer2">
-            <hr/>
-            <p>São Paulo | Brasil | 2021</p>
-        </div>
-    </footer> -->
-<!-- footer do fernando -->
 
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-setion about">
-      <h1 class="logo-text"><span>DH</span>
-        BURGER</h1>
-    </div>
-    <div class="socials">
-      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-    </div>
+<!-- importando o footer da pasta partials -->
+<%- include('./partials/footer') %> 
 
-    <div class="footer-setion about"></div>
-    <div class="footer-setion about"></div>
-  </div>
-
-  <div class="footer-bottom">
-    &copy; Digital Burger | Website made by Grupo 3
-  </div>
-  </div>
-
-</footer>
- 
     <script type="text/javascript" src="javascripts/index.js"></script>
 </body>
 </html>
