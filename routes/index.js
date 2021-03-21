@@ -1,27 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-const burguers = require('../database/burguers.json');
+const indexController = require("../controllers/indexController");
 
+router.get("/", indexController.index);
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+router.get("/contato", indexController.contato);
 
-router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login' });
-});
-
-router.get('/contato', function(req, res, next) {
-  res.render('contato', { title: 'Contato' });
-});
-
-router.get('/menu', function(req, res, next) {
-  res.render('menu', { burguers });
-});
-
-router.get('/sobre', function(req, res, next) {
-  res.render('sobre', { title: 'Sobre' });
-}); 
+router.get("/sobre", indexController.sobre);
 
 module.exports = router;
