@@ -1,0 +1,10 @@
+// configuração do banco de dados no mysql
+
+module.exports = {
+  host: "localhost",
+  dialect: "mysql",
+  username: "root",
+  port: 3306,
+  password: "",
+  database: "dhburguer",
+};
