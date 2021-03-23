@@ -7,20 +7,19 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
       },
       descricao: DataTypes.STRING,
-      created_at: DataTypes.DATE,
-      updated_at: DataTypes.DATE,
+      createdAt: DataTypes.DATE,
+      updatedAt: DataTypes.DATE,
     },
     {
       //nome da tabela no banco
       tableName: "status_pedidos",
-      timestamps: false,
     }
   );
-  // statusPedidos.associate = (models) => {
-  //   statusPedidos.belongsTo(models.pedidos, {
-  //     foreignKey: "pedidos_id",
-  //   });
-  // };
+  statusPedidos.associate = (models) => {
+    statusPedidos.hasMany(models.Pedidos, {
+      foreignKey: "id",
+    });
+  };
 
   return statusPedidos;
 };

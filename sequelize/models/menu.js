@@ -6,19 +6,18 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         unique: true,
       },
-      created_at: DataTypes.DATE,
-      updated_at: DataTypes.DATE,
+      createdAt: DataTypes.DATE,
+      updatedAt: DataTypes.DATE,
     },
     {
       //nome da tabela no banco
       tableName: "menu",
-      timestamps: false,
     }
   );
   // produtos_id pertence a tabela Produtos
   menu.associate = (models) => {
-    menu.belongsTo(models.Produtos, {
-      foreignKey: "produtos_id",
+    menu.hasMany(models.Produtos, {
+      foreignKey: "id",
     });
   };
 

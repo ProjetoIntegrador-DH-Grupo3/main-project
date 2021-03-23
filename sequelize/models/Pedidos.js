@@ -7,16 +7,27 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
       },
       quantidade: DataTypes.INTEGER,
-      created_at: DataTypes.DATE,
-      updated_at: DataTypes.DATE,
+      createdAt: DataTypes.DATE,
+      updatedAt: DataTypes.DATE,
     },
 
     {
       //nome da tabela no banco
       tableName: "pedidos",
-      timestamps: false,
     }
   );
+  pedidos.associate = (models) => {
+    pedidos.hasMany(models.Usuario, {
+      foreignKey: "id",
+    }),
+      pedidos.belongsTo(models.StatusPedidos, {
+        foreignKey: "id",
+      }),
+      pedidos.belongsToMany(models.Produtos, {
+        through: "pedidos_detalhe",
+        foreignKey: "id",
+      });
+  };
 
   return pedidos;
 };
