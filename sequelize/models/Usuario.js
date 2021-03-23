@@ -9,15 +9,20 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
       },
       senha: DataTypes.STRING,
-      created_at: DataTypes.DATE,
-      updated_at: DataTypes.DATE,
+      createdAt: DataTypes.DATE,
+      updatedAt: DataTypes.DATE,
     },
     {
       //nome da tabela no banco
       tableName: "usuario",
-      timestamps: false,
     }
   );
+
+  usuario.associate = (models) => {
+    usuario.belongsTo(models.Pedidos, {
+      foreignKey: "id",
+    });
+  };
 
   return usuario;
 };
