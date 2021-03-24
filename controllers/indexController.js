@@ -11,6 +11,11 @@ const indexController = {
   sobre: (_req, res) => {
     res.render("sobre");
   },
+  cadastro: (_req, res) => {
+    res.render("cadastro");
+  },
 };
 
 module.exports = indexController;
+
+
