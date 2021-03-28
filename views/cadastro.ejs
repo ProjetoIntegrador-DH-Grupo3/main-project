@@ -17,33 +17,53 @@
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
 
-<!-- formulario de cadastro -->
+    <!-- formulario de cadastro -->
 
-<!-- <img src="/img/cadastro.png" alt="" class="fundo"> -->
+    <!-- <img src="/img/cadastro.png" alt="" class="fundo"> -->
 
-<form id="form-produto" method='POST' action="/cadastro" enctype="multipart/form-data">
-  <label>
-      Nome
-      <input type="text" id="nome" name="nome" placeholder="Digite o nome do produto">
-  </label>
-  <label>
-      Ingredientes
-      <input type="text" id="ingredientes" name="ingredientes" placeholder="Ingredientes (separados por vírgula)">
-  </label>
-  <label>
-      Preço
-      <input type="number" id="preco" name="preco" step="0.01" placeholder="Digite o preço da pizza">
-  </label>
-  <label>
-      Foto
-      <img src="/img/no-image.jpg">
-      <div>Clique para selecione nova imagem</div>
-      <input type="file" name="imagem" id="img">
-  </label>
-  <button type="submit">Salvar</button>
-</form>
-<!-- //formulario de cadastro -->
-
+    <form
+      id="form-produto"
+      method="POST"
+      enctype="multipart/form-data"
+      action="/cadastro"
+    >
+      <label>
+        Nome
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite o nome do produto"
+        />
+      </label>
+      <label>
+        descricao
+        <input
+          type="text"
+          id="descricao"
+          name="descricao"
+          placeholder="descricao (separados por vírgula)"
+        />
+      </label>
+      <label>
+        Preço
+        <input
+          type="number"
+          id="preco"
+          name="preco"
+          step="0.01"
+          placeholder="Digite o preço da pizza"
+        />
+      </label>
+      <label>
+        Foto
+        <img src="/img/no-image.jpg" />
+        <div>Clique para selecione nova imagem</div>
+        <input type="file" name="imagem" id="img" required />
+      </label>
+      <button type="submit">Salvar</button>
+    </form>
+    <!-- //formulario de cadastro -->
 
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
