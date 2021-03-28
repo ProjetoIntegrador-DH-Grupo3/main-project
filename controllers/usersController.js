@@ -1,3 +1,5 @@
+const { Usuario } = require("../sequelize/models");
+
 const usersController = {
   login: (_req, res) => {
     res.render("login");
