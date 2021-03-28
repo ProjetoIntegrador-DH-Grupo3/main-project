@@ -1,10 +1,11 @@
+const { Produtos, Menu } = require("../sequelize/models");
 const burguers = require("../database/burguers.json");
-const { Menu } = require("../sequelize/models");
-const { Produtos } = require("../sequelize/models");
 
 const menuController = {
-  index: (_req, res) => {
-    res.render("menu", { burguers });
+  index: async (_req, res) => {
+    const produtos = await Produtos.findAll();
+    console.log(produtos);
+    res.render("menu", { produtos });
   },
 };
 
