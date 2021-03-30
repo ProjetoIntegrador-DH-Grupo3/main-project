@@ -9,7 +9,7 @@
     <link rel="stylesheet" text="text/css" href="/css/login.css" />
     <link rel="stylesheet" href="/css/menuHamburguer.css" />
     <link rel="stylesheet" href="/css/medias.css" />
-    <title>Login</title>
+    <title>Registro</title>
   </head>
   <body>
     <!-- importando o header da pasta partials -->
@@ -17,18 +17,25 @@
     <section>
       <div class="container">
         <div class="user siginBx">
-          <div class="imgBx"><img src="/img/login.jpg" /></div>
+          <div class="imgBx"><img src="/img/porta.jpg" /></div>
           <div class="formBx">
             <form method="POST">
-              <h2>Fazer login</h2>
+              <h2>Criar sua conta</h2>
               <input type="text" placeholder="Email" name="email" />
-              <input type="password" placeholder="Password" name="password" />
-              <input type="submit" value="Login" />
+              <input
+                type="password"
+                placeholder="Create Password"
+                name="create_password"
+              />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="confirm_password"
+              />
+              <input type="submit" value="Cadastrar" />
               <p class="signup">
-                Não tem uma conta?
-                <a href="/users/registro" onclick="toggleForm()">
-                  Cadastre-se</a
-                >
+                Já tem uma conta?
+                <a href="/users/login" onclick="toggleForm()"> Entre.</a>
               </p>
             </form>
           </div>

@@ -14,8 +14,9 @@ const indexController = {
   cadastro: (_req, res) => {
     res.render("cadastro");
   },
+  // registro: (req, res) => {
+  //   res.render("registro");
+  // },
 };
 
 module.exports = indexController;
-
-
