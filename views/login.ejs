@@ -5,58 +5,41 @@
     <%- include('./partials/head') %>
     <!-- importando a font principal -->
     <%- include('./partials/mainFont') %>
-
-    <link rel="stylesheet" text="text/css" href="css/styles.css" />
-    <link rel="stylesheet" text="text/css" href="css/login.css" />
-    <link rel="stylesheet" href="css/menuHamburguer.css" />
-    <link rel="stylesheet" href="css/medias.css" />
-
+    <link rel="stylesheet" text="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" text="text/css" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/menuHamburguer.css" />
+    <link rel="stylesheet" href="/css/medias.css" />
     <title>Login</title>
   </head>
   <body>
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
-
     <section>
       <div class="container">
         <div class="user siginBx">
-          <div class="imgBx"><img src="img/login.jpg" /></div>
+          <div class="imgBx"><img src="/img/login.jpg" /></div>
           <div class="formBx">
-            <form>
+            <form method="POST">
               <h2>Fazer login</h2>
-              <input type="text" placeholder="Email" />
-              <input type="password" placeholder="Password" />
+              <input type="text" placeholder="Email" name="email" />
+              <input type="password" placeholder="Password" name="password" />
               <input type="submit" value="Login" />
               <p class="signup">
                 Não tem uma conta?
+<<<<<<< HEAD
                 <a href="/registro" onclick="toggleForm()"> Cadastre-se</a>
+=======
+                <a href="/users/registro" onclick="toggleForm()">
+                  Cadastre-se</a
+                >
+>>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
               </p>
             </form>
           </div>
-        </div>
-
-        <div class="user signupBx">
-          <div class="formBx">
-            <form>
-              <h2>Criar sua conta</h2>
-              <input type="text" placeholder="Email" />
-              <input type="password" placeholder="Create Password" />
-              <input type="password" placeholder="Confirm Password" />
-              <input type="submit" value="Cadastrar" />
-              <p class="signup">
-                Já tem uma conta? <a href="#" onclick="toggleForm()"> Entre.</a>
-              </p>
-            </form>
-          </div>
-          <div class="imgBx"><img src="img/porta.jpg" /></div>
         </div>
       </div>
     </section>
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
-
-    <script type="text/javascript" src="javascripts/index.js"></script>
-
-    <script type="text/javascript" src="javascripts/login.js"></script>
   </body>
 </html>
