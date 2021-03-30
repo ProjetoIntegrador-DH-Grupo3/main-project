@@ -452,6 +452,7 @@ input, label {
 
 /* sobre DH2 */
 .containerDH {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,6 +472,9 @@ input, label {
 }
 
 .esquerda-col h3 {
+    align-items: center;
+    justify-self: center;
+    display: flex;
     font-size: 30px;
     text-align: left;
     justify-content: center;
@@ -480,6 +484,7 @@ input, label {
 }
 
 .esquerda-col p {
+    display: flex;
     font-size: 20px;
     padding-top: 5px;
     /* padding-left: 5%; */
@@ -495,6 +500,7 @@ input, label {
 }
 
 .direita-col img {
+    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 50vw;
@@ -507,6 +513,9 @@ input, label {
 .fundo img {
     margin: 0;
     width: 100%;
+    align-items: center;
+    justify-self: center;
+    display: flex;
 }
 
 /* imagem fundo */
