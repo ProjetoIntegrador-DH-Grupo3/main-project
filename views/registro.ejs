@@ -5,17 +5,25 @@
     <%- include('./partials/head') %>
     <!-- importando a font principal -->
     <%- include('./partials/mainFont') %>
+<<<<<<< HEAD
 
     <link rel="stylesheet" text="text/css" href="css/styles.css" />
     <link rel="stylesheet" text="text/css" href="css/login.css" />
     <link rel="stylesheet" href="css/menuHamburguer.css" />
     <link rel="stylesheet" href="css/medias.css" />
 
+=======
+    <link rel="stylesheet" text="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" text="text/css" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/menuHamburguer.css" />
+    <link rel="stylesheet" href="/css/medias.css" />
+>>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
     <title>Registro</title>
   </head>
   <body>
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
+<<<<<<< HEAD
 
     <section>
       <div class="container">
@@ -30,10 +38,35 @@
               <input type="submit" value="Cadastrar" />
               <p class="signup">
                 Já tem uma conta? <a href="/login" onclick="toggleForm()"> Entre.</a>
+=======
+    <section>
+      <div class="container">
+        <div class="user siginBx">
+          <div class="imgBx"><img src="/img/porta.jpg" /></div>
+          <div class="formBx">
+            <form method="POST">
+              <h2>Criar sua conta</h2>
+              <input type="text" placeholder="Email" name="email" />
+              <input
+                type="password"
+                placeholder="Create Password"
+                name="create_password"
+              />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="confirm_password"
+              />
+              <input type="submit" value="Cadastrar" />
+              <p class="signup">
+                Já tem uma conta?
+                <a href="/users/login" onclick="toggleForm()"> Entre.</a>
+>>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
               </p>
             </form>
           </div>
         </div>
+<<<<<<< HEAD
 
         <div class="user signupBx">
           <div class="formBx">
@@ -50,13 +83,18 @@
           </div>
           <div class="imgBx"><img src="img/porta.jpg" /></div>
         </div>
+=======
+>>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
       </div>
     </section>
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
+<<<<<<< HEAD
 
     <script type="text/javascript" src="javascripts/index.js"></script>
 
     <script type="text/javascript" src="javascripts/login.js"></script>
+=======
+>>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
   </body>
 </html>

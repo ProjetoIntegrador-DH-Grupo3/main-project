@@ -6,13 +6,13 @@ var clearTime;
 
 function slide(n) {
   document.getElementById(
-    'imageBg',
+    "imageBg"
   ).style.backgroundImage = `url(img/${n}.jpg)`;
   document.getElementById(
-    'imageBg2',
+    "imageBg2"
   ).style.backgroundImage = `url(img/${n}.png)`;
   document.getElementById(
-    'imageBg3',
+    "imageBg3"
   ).style.backgroundImage = `url(img/${n}.svg)`;
   slideComTemporizador();
 }
@@ -47,4 +47,8 @@ function proximo() {
     slide(bgNumber);
   }
   slideComTemporizador();
+}
+
+function handleContactClick() {
+  window.scrollTo(0, document.body.scrollHeight);
 }
