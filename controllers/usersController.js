@@ -1,8 +1,5 @@
 const { Usuario } = require("../sequelize/models");
-<<<<<<< HEAD
-=======
 const bcrypt = require("bcryptjs");
->>>>>>> ab32a5ea7f88d040c146c4d00dfa1830189b3cda
 
 const usersController = {
   index: (_req, res) => res.render("registro"),
