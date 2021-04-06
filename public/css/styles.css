@@ -53,6 +53,7 @@
     line-height: 27px;
     padding-right: 30px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nav-item a:hover {
@@ -151,8 +152,6 @@
     width: 100%;
     height: 200px;
     background-color: #2D2D2D;
-    
-    
 }
 
 .txt {
@@ -161,10 +160,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
-    
-
     color: #FFFFFF;
-
     text-transform: uppercase;
 }
 
@@ -172,97 +168,11 @@
     color: #F5C700;
 }
 
-/* geral do cadastro */
-
-/* //geral do cadastro */
 
 
-input, label {
-
-}
-/* #footer {
-    margin-top: 50px;
-    width: 100%;
-    height: 250px;
-    background: #fff;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#footer img {
-    width: 180px;
-    height: 180px;
-
-}
-
-#footer p {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-#footer hr {
-    background-color: black;
-    height: 4px;
-}
-
-.footerOff {
-    display: none;
-} */
-
-/* Footer */
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    background-color: black;
-    color: white;
-    height: 300px;
-    position: relative;
-
-    flex-wrap: wrap;
-  }
-
-.footer .footer-content {
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 
-  .footer .footer-bottom {
-      background-color: black;
-      /* background-color: orange; */
-      color: #fff;
-      height: 50px;
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      padding-top: 15px;
-  }
 
-.socials a i {
-    
-    color: white;
-    font-size: 25px;
-
-    padding: 5px;
-}
-
-.socials i:hover {
-    
-    color: #F5C700;
-}
 
 
 
@@ -397,17 +307,26 @@ input, label {
         padding: 0;
     }
 }
+/*//caixa do formulario */
 
 /* sobre Dh*/
+section {
+    margin:0;
+}
+
 .container {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     width: 100%;
     height: 80%;
+
+ 
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .left-col {
@@ -449,6 +368,16 @@ input, label {
     padding-left: 5%;
     text-align: left;
 }
+/*//sobre Dh*/
+
+@media (max-width: 911px) {
+    .left-col {
+        width: 100%;
+    }
+    .right-col {
+        width: 100%;
+    }
+}
 
 /* sobre DH2 */
 .containerDH {
@@ -458,6 +387,7 @@ input, label {
     align-items: center;
     width: 100%;
     height: 100;
+    flex-wrap: wrap;
 }
 
 .esquerda-col {
@@ -503,19 +433,77 @@ input, label {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50vw;
+    width: 100%;
     /* min-height: 50vh; */
 }
 /*//sobre DH2 */
 
-/* imagem fundo */
+@media (max-width: 911px) {
+    .esquerda-col {
+        width: 100%;
+    }
+    .direita-col {
+        width: 100%;
+    }
+    .direita-col img {
+        width: 100%;
+    }
+}
 
+
+/* imagem fundo varios logos */
 .fundo img {
-    margin: 0;
     width: 100%;
     align-items: center;
     justify-self: center;
     display: flex;
 }
-
 /* imagem fundo */
+
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+    max-height: 100%;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .footer-bottom {
+      background-color: black;
+      color: #fff;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 15px;
+}
+
+.logo-text:hover {
+    color: #F5C700;
+}
+.socials a i {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.socials i:hover {
+    color: #F5C700;
+}
