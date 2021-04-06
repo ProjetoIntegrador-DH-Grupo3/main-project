@@ -17,13 +17,10 @@
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
 
-    <div class="image">
-      <img src="/img/menu.png" alt="" />
-      <h2>menu</h2>
-      </div>
-
+    <img class="fundo-img" src="/img/fundo3.png" alt="" />
     <div class="wrap">
       <div class="title">
+        <h1>M e n u</h1>
       </div>
     </div>
 
@@ -32,7 +29,7 @@
       <span class="cardapio">
         <span class="topCard">
           <img
-            src="/img/1-hamburguer.png"
+            src="/posts/<%= burguerSingular.imagem %>"
             class="hamburguerImg"
             alt="hamburguer"
           />

@@ -1,7 +1,9 @@
 const { Produtos, Menu } = require("../sequelize/models");
 const menuController = {
   index: async (_req, res) => {
-    const produtos = await Produtos.findAll();
+    const produtos = await Produtos.findAll({
+      order: [["createdAt", "DESC"]],
+    });
     res.render("menu", { produtos });
   },
 };

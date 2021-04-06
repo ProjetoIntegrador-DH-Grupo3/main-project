@@ -7,7 +7,7 @@ const usersController = {
     const { email, confirm_password, create_password } = req.body;
 
     if (confirm_password != create_password) {
-      res.redirect("/login");
+      res.redirect("login");
     } else {
       const dataAtual = new Date();
 
