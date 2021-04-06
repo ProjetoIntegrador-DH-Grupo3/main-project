@@ -6,6 +6,6 @@ const upload = require("../sequelize/configs/upload");
 
 router.get("/", cadastroController.index);
 
-router.post("/", upload.single("imagem"), cadastroController.store);
+router.post("/", upload.single("img"), cadastroController.store);
 
 module.exports = router;

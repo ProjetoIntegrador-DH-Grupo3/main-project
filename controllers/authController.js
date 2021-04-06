@@ -8,7 +8,6 @@ const authController = {
 
   store: async (req, res) => {
     const { email, password } = req.body;
-    console.log(password);
     const usuario = await Usuario.findOne({
       where: {
         email,
