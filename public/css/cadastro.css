@@ -16,7 +16,8 @@ body::before{
 #form-produto {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	width: 400px;
+	/* width: 400px; */
+	max-width:400px;
 	margin: 4vh auto;
 	background-color: #111;
 	color: #FFF;
@@ -70,4 +71,11 @@ body::before{
 	width: 100%;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+
+@media (max-width: 911px) {
+    #form-produto {
+        width: 70%;
+    }
 }
