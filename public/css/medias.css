@@ -1,228 +1,182 @@
+@media (max-width: 1074px) {
+  #imageBg {
+    display: none;
+  }
+  #imageBg2 {
+    display: flex;
+  }
 
-@media (max-width: 1074px)
-{
-    #imageBg {
-        display: none;
-    }
-    #imageBg2 {
-        display: flex;
-    }
+  .BTCard {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .BTCard {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  .part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    }
+  .BTCard p,
+  h2 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 
-    .part1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .BTCard h2 {
+    padding-left: 0px;
+  }
 
-    .BTCard p, h2 {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
+  .BTCard p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .BTCard h2 {
-        padding-left: 0px;
-    }
+  .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .BTCard p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .BTCard img {
+    padding-right: 0px;
+  }
 
-    .part2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .BTCard img {
-        padding-right: 0px;
-    }
-
-    #mNormal {
-        display: none;
-    }
-
-    
+  #mNormal {
+    display: none;
+  }
 }
 
-@media (max-width: 815px)
-{
-    #imageBg {
-        display: none;
-    }
-    #imageBg2 {
-        display: flex;
-    }
-
-    
-
-    
+@media (max-width: 815px) {
+  #imageBg {
+    display: none;
+  }
+  #imageBg2 {
+    display: flex;
+  }
 }
 
-@media (max-width: 680px)
-{
-    #imageBg {
-        display: none;
-    }
-    #imageBg2 {
-        display: none;
-    }
-    #imageBg3 {
-        display: flex;
-        background-size: contain;
-    }
+@media (max-width: 680px) {
+  #imageBg {
+    display: none;
+  }
+  #imageBg2 {
+    display: none;
+  }
+  #imageBg3 {
+    display: flex;
+    background-size: contain;
+  }
 
-    .anterior, .proximo {
-        width: 45px;
-        height: 80px;
-        line-height: 80px;
+  .anterior,
+  .proximo {
+    width: 45px;
+    height: 80px;
+    line-height: 80px;
+  }
 
-    }
+  #footer {
+    flex-direction: column;
+  }
 
-    #footer {
-        flex-direction: column;
-    }
+  .footerOff {
+    display: flex;
+  }
+  .footerOn {
+    display: none;
+  }
 
-    .footerOff {
-        display: flex;
-    }
-    .footerOn {
-        display: none;
-    }
+  .sobre {
+    width: 90%;
+  }
 
-    .sobre {
-        width: 90%;
-    
-    }
+  .TPCard {
+    width: 100%;
+  }
 
-    .TPCard {
-        width: 100%;
-
-    }
-
-
-    .TPCard p {
-        padding-left: 20px;
-        padding-right: 20px;
-        
-    }
-
-    
-
-    
+  .TPCard p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-@media (max-width: 641px)
-{
-    
-    .contencao {
-        height: 380px;
-    
-    }
+@media (max-width: 641px) {
+  .contencao {
+    height: 380px;
+  }
 
-    .anterior, .proximo {
-        margin-top: -396px;
-
-    }
-    
+  .anterior,
+  .proximo {
+    margin-top: -396px;
+  }
 }
 
-@media (max-width: 554px)
-{
+@media (max-width: 554px) {
+  .cardapio {
+    width: 160px;
+    height: 350px;
+  }
 
-    .cardapio {
-        width: 160px;
-        height: 350px;
-    
-        
-    }
+  .topCard img {
+    width: 150px;
+  }
 
-    .topCard img {
-        width: 150px;
-    }
+  .topCard p {
+    width: 160px;
+  }
 
-    .topCard p {
-        width: 160px;
-        
-    }
-
-    .bottomCard button {
-        width: auto;
-    }
-
-    
+  .bottomCard button {
+    width: auto;
+  }
 }
 
-@media (max-width: 414px)
-{
-    .contencao {
-        height: 280px;
-    
-    }
-    .anterior, .proximo {
-        margin-top: -496px;
-        width: 35px;
-        height: 60px;
-        line-height: 60px;
+@media (max-width: 414px) {
+  .contencao {
+    height: 280px;
+  }
+  .anterior,
+  .proximo {
+    margin-top: -496px;
+    width: 35px;
+    height: 60px;
+    line-height: 60px;
+  }
 
-    }
+  .txt {
+    font-size: 18px;
+  }
 
-    .txt {
-        font-size: 18px;
-        
-    }
+  #form-login {
+    width: 375px;
+  }
 
-    #form-login {
-        width: 375px;
-    }
-
-    #mensagem {
-        width: 275px;
-    }
-
-    
-
-    
+  #mensagem {
+    width: 275px;
+  }
 }
 
-@media (max-width: 375px)
-{
-    .contencao {
-        height: 280px;
-    
-    }
-    .anterior, .proximo {
-        margin-top: -496px;
-
-    }
-
-    
-    
+@media (max-width: 375px) {
+  .contencao {
+    height: 280px;
+  }
+  .anterior,
+  .proximo {
+    margin-top: -496px;
+  }
 }
 
 @media (min-width: 1073px) {
-    #mHamburguer {
-        display: none;
-    }
+  #mHamburguer {
+    display: none;
+  }
 }
 
-
-@media (max-width: 1074px)
-{
-    
-    #mNormal {
-        display: none;
-    }
-
-    
+@media (max-width: 1074px) {
+  #mNormal {
+    display: none;
+  }
 }
