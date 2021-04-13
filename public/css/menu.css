@@ -91,25 +91,11 @@ main {
   opacity: 0.8;
   cursor: pointer;
   border-radius: 3px;
-  /* text-transform: uppercase; */
 }
 
 .bottomCard button:hover {
   opacity: 1;
 }
-
-/*  */
-
-/* div {
-    background-color: orangered;
-    width: 100vw;
-    height: 30vh;
-    background-size: 50%, 25%, 25%;
-    display: inline-block;
-    justify-content: center;
-    /* position: relative; 
-    position: fixed;
-} */
 
 .fundo-texto {
   display: flex;

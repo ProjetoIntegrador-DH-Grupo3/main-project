@@ -21,6 +21,14 @@ module.exports = (sequelize, DataTypes) => {
       tableName: "pedidos_detalhe",
     }
   );
+  pedidosDetalhe.associate = (models) => {
+    pedidosDetalhe.hasMany(models.Pedidos, {
+      foreignKey: "id",
+    }),
+      pedidosDetalhe.hasMany(models.Produtos, {
+        foreignKey: "id",
+      });
+  };
 
   return pedidosDetalhe;
 };

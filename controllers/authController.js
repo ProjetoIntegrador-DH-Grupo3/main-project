@@ -17,17 +17,18 @@ const authController = {
       return res.send("Usuario inválido");
     }
     const resultado = bcrypt.compareSync(password, usuario.senha);
-    console.log(resultado);
     if (!resultado) {
       return res.send("senha inválido");
     }
 
-    // req.session.user = {
-    //   id: usuario.id,
-    //   nome: usuario,
-    // };
+    req.session.user = {
+      id: usuario.id,
+      nome: usuario.email,
+      admin: usuario.permissao,
+    };
+    console.log(req.session.user.admin);
 
-    return res.redirect("/menu");
+    return res.redirect("/");
   },
 };
 

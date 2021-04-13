@@ -3,9 +3,10 @@ const router = express.Router();
 
 const cadastroController = require("../controllers/cadastroController");
 const upload = require("../sequelize/configs/upload");
+const admin = require("../middlewares/admin");
 
-router.get("/", cadastroController.index);
+router.get("/", admin, cadastroController.index);
 
-router.post("/", upload.single("img"), cadastroController.store);
+router.post("/", admin, upload.single("img"), cadastroController.store);
 
 module.exports = router;
