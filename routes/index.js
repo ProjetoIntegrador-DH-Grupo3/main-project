@@ -9,7 +9,4 @@ router.get("/contato", indexController.contato);
 
 router.get("/sobre", indexController.sobre);
 
-// router.get("/registro", indexController.registro);
-router.get("/cadastro", indexController.cadastro);
-
 module.exports = router;

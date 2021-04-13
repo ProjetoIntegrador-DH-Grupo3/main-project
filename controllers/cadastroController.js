@@ -24,7 +24,6 @@ cadastroController = {
       fs.unlinkSync(file.path);
       return res.send("erro ao criar o produto");
     }
-    console.log(produtos.imagem);
 
     return res.redirect("/menu");
   },

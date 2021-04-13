@@ -17,8 +17,70 @@
     <title>Home</title>
 </head>
 <body>
-  <!-- importando o header da pasta partials -->
-  <%- include('./partials/header') %> 
+    <div id="header" class="header">
+        <div class="leftSide">
+          <a href="/"><img src="/img/logo3.png" class="logo" alt="logo" /></a>
+        </div>
+        <div class="rightSide">
+          <div id="mHamburguer">
+            <input id="menu-hamburguer" type="checkbox" />
+      
+            <label for="menu-hamburguer">
+              <div class="menu">
+                <span class="hamburguer"></span>
+              </div>
+            </label>
+      
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link1" href="/menu">Menu</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link1" href="/sobre">DH burger</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link1" href="/contato">Contato</a>
+              </li>
+      
+      
+              <li class="nav-item">
+                <a class="nav-link1" href="/users/login">Login</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1" href="/carrinho">Car</a>
+              </li>
+            </ul>
+          </div>
+      
+          <div id="mNormal">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu">Menu</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">burger</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#formBx">Contato</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="/users/login">Login</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/carrinho">Carrinho</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
 
     <main>
       <!-- carrossel -->
