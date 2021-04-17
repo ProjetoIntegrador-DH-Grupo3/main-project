@@ -72,6 +72,7 @@
 	cursor: pointer;
 	border-radius: 10px;
 	text-transform: uppercase;
+	
 }
 
 #form-login .controles button:hover{
