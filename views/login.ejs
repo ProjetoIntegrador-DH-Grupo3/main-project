@@ -21,12 +21,12 @@
           <div class="formBx">
             <form method="POST">
               <h2>Fazer login</h2>
-              <input type="text" placeholder="Email" name="email" />
+              <input type="text" placeholder="Email" name="email" id="email" />
               <input type="password" placeholder="Password" name="password" />
-              <input type="submit" value="Login" />
+              <input type="submit" value="Login" id="login" />
               <p class="signup">
                 Não tem uma conta?
-                <a href="/users/registro" onclick="toggleForm()">
+                <a href="/users/registro" id="cadastro" onclick="toggleForm()">
                   Cadastre-se</a
                 >
               </p>
@@ -38,4 +38,8 @@
 
 
   </body>
+
+  <!-- <script type="text/javascript" src="/javascripts/index.js"></script> -->
+
+  <script type="text/javascript" src="/javascripts/login.js"></script>
 </html>
