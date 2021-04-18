@@ -1,4 +1,4 @@
-const { Produtos } = require("../sequelize/models");
+const { Produtos, Menu } = require("../sequelize/models");
 
 cadastroController = {
   index: (req, res) => {
