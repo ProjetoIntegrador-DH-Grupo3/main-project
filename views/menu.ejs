@@ -25,32 +25,41 @@
     </div>
 
     <main>
-      <% for (let burguerSingular of menu) {%>
-
-      <span class="cardapio">
-        <span class="topCard">
-          <img
-            width="180"
-            height="110"
-            src="/posts/<%= burguerSingular.imagem %>"
-            class="hamburguerImg"
-            alt="hamburguer"
-          />
-          <h2><%= burguerSingular.nome %></h2>
-          <p><%= burguerSingular.descricao %></p>
+      <% for (let burguerSingular of produtos) {%>
+      <form name="cardProduto">
+        <input type="text" value="<%= burguerSingular.id %>" hidden />
+        <span class="cardapio">
+          <span class="topCard">
+            <img
+              width="180"
+              height="110"
+              src="/posts/<%= burguerSingular.imagem %>"
+              class="hamburguerImg"
+              alt="hamburguer"
+            />
+            <h2 name="nome"><%= burguerSingular.nome %></h2>
+            <p><%= burguerSingular.descricao %></p>
+          </span>
+          <span class="bottomCard">
+            <h1>
+              <%=burguerSingular.preco.toLocaleString('pt-br', {
+              minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' })
+              %>
+            </h1>
+            <button
+              type="button"
+              onclick="addCarrinho('<%= burguerSingular.id%>','<%= burguerSingular.preco%>')"
+            >
+              Adicionar
+            </button>
+          </span>
         </span>
-        <span class="bottomCard">
-          <h1>
-            <%=burguerSingular.preco.toLocaleString('pt-br', {
-            minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) %>
-          </h1>
-          <button>Adicionar</button>
-        </span>
-      </span>
+      </form>
       <% } %>
     </main>
 
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
+    <script src="/javascripts/carrinho.js"></script>
   </body>
 </html>

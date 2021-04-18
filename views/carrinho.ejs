@@ -24,15 +24,20 @@
       <hr />
 
       <!-- Product #1 -->
-
+      <% produtos.forEach( item => { %>
       <div class="item">
         <div class="image">
-          <img width="180" height="110" src="/img/1-hamburguer.png" alt="" />
+          <img
+            width="180"
+            height="110"
+            src="/posts/<%= item.imagem %>"
+            alt=""
+          />
         </div>
 
         <div class="description">
-          <span>Hamburguer da casa</span>
-          <span>Alface, queijo, tomate, molho especial</span>
+          <span><%= item.nome %></span>
+          <span><%= item.descricao %> </span>
         </div>
 
         <div class="quantity">
@@ -45,7 +50,7 @@
           </button>
         </div>
 
-        <div class="total-price">$ 549</div>
+        <div class="total-price">$ <%= item.preco %></div>
 
         <div class="buttom-delete">
           <span class="delete-btn"></span>
@@ -53,6 +58,7 @@
         </div>
       </div>
       <hr />
+      <% }) %>
 
       <div class="confirm">
         <button class="confirm-btn" type="submit">Confirmar</button>
