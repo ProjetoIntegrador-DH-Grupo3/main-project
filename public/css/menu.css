@@ -8,22 +8,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   background-image: linear-gradient(
     to right,
     rgb(255, 165, 0),
     rgb(255, 118, 6)
   );
-  color: black;
-  outline: black;
-  font-family: "Poppins", sans-serif;
-  -webkit-text-stroke: 2px black;
-  -webkit-text-fill-color: transparent;
   width: 100%;
   height: 250px;
-  font-size: 60px;
+  font-size: 65px;
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.menu-title {
+  margin-left: 20%;
+  opacity: 0.8;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: #fff;
 }
 
 main {
@@ -102,12 +108,10 @@ main {
 }
 
 .fundo-img {
-  width: 25%;
+  width: 40%;
   height: 25%;
   display: flex;
   position: absolute;
-  right: 10%;
-  rotate: 10;
-  opacity: 60%;
-  transform: rotate(5deg);
+  top: 20%;
+  right: 50%;
 }
