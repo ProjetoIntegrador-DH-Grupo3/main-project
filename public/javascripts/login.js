@@ -10,12 +10,6 @@ const cadastro = document.getElementById('cadastro');
     cadastro.onmouseover = function(){
     this.style.color = "blue"
 }
-
 cadastro.onmouseout = function(){
     this.style.color = "#677eff"
 }
-
-
-// Usuario inválido
-// const email = document.getElementById("email");
-// email.style.background = "red";
