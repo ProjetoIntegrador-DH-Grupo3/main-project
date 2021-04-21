@@ -26,46 +26,70 @@
       <!-- Product #1 -->
       <% if(!produto) { %>
       <h1>sem produtos no seu carrinho</h1>
-      <% } %> <% if(produto) { %> <% produto.forEach( item => { %>
-      <div class="item">
-        <div class="image">
-          <img
-            width="180"
-            height="110"
-            src="/posts/<%= item.imagem %>"
-            alt=""
-          />
-        </div>
+      <% } %> <% if(produto) { %> <% for (let item of produto) {%>
+      <form method="POST" class="form" action="/carrinho">
+        <input type="text" name="produtoId" value="<%= item.id %>" hidden />
+        <div class="item">
+          <div class="image">
+            <img
+              width="180"
+              height="110"
+              src="/posts/<%= item.imagem %>"
+              alt=""
+            />
+          </div>
 
-        <div class="description">
-          <span><%= item.nome %></span>
-          <span><%= item.descricao %> </span>
-        </div>
+          <div class="description">
+            <span><%= item.nome %></span>
+            <span><%= item.descricao %> </span>
+          </div>
 
-        <div class="quantity">
-          <button class="minus-btn" type="button" name="button">
-            <img src="/img/minus.svg" alt="" />
-          </button>
-          <input
-            class="number"
-            type="text"
-            name="name"
-            value="<%= item.quantidade %>"
-          />
-          <button class="plus-btn" type="button" name="button">
-            <img src="/img/plus.svg" alt="" />
-          </button>
-        </div>
+          <div class="quantity">
+            <button
+              class="minus-btn"
+              type="submit"
+              name="minusBtn"
+              onclick="decrement('<%=item.id%>')"
+            >
+              <img src="/img/minus.svg" alt="" />
+            </button>
+            <input
+              class="number"
+              id="number-<%=item.id %>"
+              type="text"
+              name="quantidade"
+              value="<%= item.quantidade %>"
+            />
+            <button
+              class="plus-btn"
+              type="submit"
+              name="plusBtn"
+              onclick="increment('<%=item.id%>')"
+            >
+              <img src="/img/plus.svg" alt="" />
+            </button>
+          </div>
 
-        <div class="total-price">$ <%= item.preco %></div>
+          <div class="total-price">
+            $
+            <input
+              name="finalPrice"
+              type="number"
+              class="final-price"
+              value="<%= item.preco %>"
+            />
+          </div>
 
-        <div class="buttom-delete">
-          <span class="delete-btn"></span>
-          <img src="/img/x.svg" alt="" />
+          <div class="buttom-delete">
+            <button class="delete-btn" type="submit" name="deleteBtn">
+              <img src="/img/x.svg" alt="" />
+            </button>
+          </div>
         </div>
-      </div>
-      <hr />
-      <% }) %> <% } %>
+        <hr />
+      </form>
+
+      <% } %> <% } %>
 
       <div class="confirm">
         <button class="confirm-btn" type="submit">Confirmar</button>
@@ -74,5 +98,6 @@
 
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
+    <script src="/javascripts/carrinho.js"></script>
   </body>
 </html>
