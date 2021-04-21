@@ -24,7 +24,9 @@
       <hr />
 
       <!-- Product #1 -->
-      <% produtos.forEach( item => { %>
+      <% if(!produto) { %>
+      <h1>sem produtos no seu carrinho</h1>
+      <% } %> <% if(produto) { %> <% produto.forEach( item => { %>
       <div class="item">
         <div class="image">
           <img
@@ -44,7 +46,12 @@
           <button class="minus-btn" type="button" name="button">
             <img src="/img/minus.svg" alt="" />
           </button>
-          <input class="number" type="text" name="name" value="1" />
+          <input
+            class="number"
+            type="text"
+            name="name"
+            value="<%= item.quantidade %>"
+          />
           <button class="plus-btn" type="button" name="button">
             <img src="/img/plus.svg" alt="" />
           </button>
@@ -58,7 +65,7 @@
         </div>
       </div>
       <hr />
-      <% }) %>
+      <% }) %> <% } %>
 
       <div class="confirm">
         <button class="confirm-btn" type="submit">Confirmar</button>

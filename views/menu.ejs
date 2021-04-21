@@ -26,8 +26,13 @@
 
     <main>
       <% for (let burguerSingular of produtos) {%>
-      <form name="cardProduto">
-        <input type="text" value="<%= burguerSingular.id %>" hidden />
+      <form method="POST" class="form">
+        <input
+          type="text"
+          name="produtoId"
+          value="<%= burguerSingular.id %>"
+          hidden
+        />
         <span class="cardapio">
           <span class="topCard">
             <img
@@ -46,12 +51,7 @@
               minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' })
               %>
             </h1>
-            <button
-              type="button"
-              onclick="addCarrinho('<%= burguerSingular.id%>','<%= burguerSingular.preco%>')"
-            >
-              Adicionar
-            </button>
+            <button type="submit">Adicionar</button>
           </span>
         </span>
       </form>
@@ -60,6 +60,5 @@
 
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
-    <script src="/javascripts/carrinho.js"></script>
   </body>
 </html>
