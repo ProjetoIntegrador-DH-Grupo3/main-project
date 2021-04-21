@@ -14,11 +14,11 @@ const authController = {
       },
     });
     if (!usuario) {
-      return res.send("Usuario inválido");
+      return res.render("login", {error:true});
     }
     const resultado = bcrypt.compareSync(password, usuario.senha);
     if (!resultado) {
-      return res.send("senha inválido");
+      return res.render("login", {error:true});
     }
 
     req.session.user = {

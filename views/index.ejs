@@ -142,24 +142,28 @@
 
         <div class="container">
           <div class="formBx" id="formBx" >
-              <form action="" id="contato_home">
+              <form action="https://api.staticforms.xyz/submit" method="post" id="contato_home">
+                <input type="hidden" name="accessKey" value="19d0adba-6d15-4f35-a92c-6b2041448fec">
+                 <input type="hidden" name="redirectTo" value="http://localhost:3000/#formBx">
+
                   <h2>Contato</h2>
                   <div class="inputBox">
-                      <input type="text" name="" required>
+                      <input type="text" name="name" required>
                       <span>Nome</span>
                   </div>
                   <div class="inputBox">
-                     <input type="email" name="" required>
+                     <input type="email" name="email" required>
                      <span>Email</span>
                  </div>
                  <div class="inputBox">
-                     <textarea required></textarea>
+                     <textarea name="message" required></textarea>
                      <span>Escreva sua mensagem aqui...</span>
                  </div>
                  <div class="inputBox">
-                     <input type="submit" name="" value="Enviar">
+                     <input type="submit" name="" value="Enviar" id="enviar">
                  </div>
               </form>
+              
           </div>
 
 
@@ -168,6 +172,8 @@
 
 <!-- importando o footer da pasta partials -->
 <%- include('./partials/footer') %> 
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script type="text/javascript" src="/javascripts/index.js"></script>
 </body>

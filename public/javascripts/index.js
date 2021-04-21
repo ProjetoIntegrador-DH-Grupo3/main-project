@@ -52,3 +52,13 @@ function proximo() {
 function handleContactClick() {
   window.scrollTo(0, document.body.scrollHeight);
 }
+
+// alert do botao contato
+document.getElementById("contato_home").addEventListener("submit", function(event) {
+  Swal.fire(
+    'Obrigado pela mensagem!',
+    'Enviado com Sucesso!',
+    'success'
+  )
+})
+

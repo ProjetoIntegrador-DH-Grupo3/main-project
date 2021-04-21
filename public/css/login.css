@@ -20,7 +20,6 @@ section {
     background:rgb(119, 114, 114);
 }
 
-
 section.active {
     background: rgb(119, 114, 114);
 }
@@ -97,6 +96,30 @@ section .container .user .formBx input {
     margin: 8px 0;
     letter-spacing: 1px;
     font-weight: 300;
+}
+
+/* input */
+.inputError::placeholder {
+    color: red;
+    opacity:1;
+}
+
+
+/* section .container .user .formBx input:focus{
+    background: blue;
+} */
+
+/* 
+section .container .user .formBx input:invalid{
+border-color: red;
+} */
+
+*::before {
+    color:red;
+}
+.span {
+    color: red;
+    /* padding-left: 50px; */
 }
 
 section .container .user .formBx input[type="submit"] {
