@@ -8,6 +8,7 @@ body {
   padding: 0;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  background-color: #e7e7e7;
 }
 
 .shopping-cart {
@@ -17,7 +18,7 @@ body {
   padding: 0 55px;
   display: flex;
   margin: 80px;
-  background-color: rgb(235, 229, 229);
+  background-color: #e7e7e7;
   align-self: center;
   flex-direction: column;
 }

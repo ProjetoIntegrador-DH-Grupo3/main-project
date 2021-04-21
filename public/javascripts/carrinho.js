@@ -1,7 +1,7 @@
 let produtos = [];
 
 function loadProduto() {
-  const produtosLocal = localStorage.getItem("@hambuguer:produtoId");
+  const produtosLocal = localStorage.getItem("@hambuguer:produto");
   if (!produtosLocal) {
     return [];
   }
@@ -30,7 +30,7 @@ function addCarrinho(produtoId, precoProduto) {
   }
 
   localStorage.setItem(
-    "@hambuguer:produtoId",
+    "@hambuguer:produto",
     JSON.stringify(produtosAtualizados)
   );
 }
