@@ -1,36 +1,38 @@
-let produtos = [];
+const btnPlus = document.querySelector(".plus-btn");
+const btnMinus = document.querySelector(".minus-btn");
+const inputNumber = document.querySelector(".number");
+const btnDelete = document.querySelector(".delete-btn");
 
-function loadProduto() {
-  const produtosLocal = localStorage.getItem("@hambuguer:produto");
-  if (!produtosLocal) {
-    return [];
-  }
-  return [...JSON.parse(produtosLocal)];
+function mais() {
+  btnPlus.addEventListener("click", () => {
+    inputNumber.value++;
+  });
 }
 
-function addCarrinho(produtoId, precoProduto) {
-  let produtosAtualizados;
-  produtos = loadProduto();
-
-  const produtoExistente = produtos.find((p) => p.id === produtoId);
-
-  if (produtoExistente) {
-    produtosAtualizados = produtos.map((p) =>
-      p.id === produtoId
-        ? { id: produtoId, preco: precoProduto, quantia: p.quantia + 1 }
-        : p
-    );
-    produtos = produtosAtualizados;
+btnMinus.addEventListener("click", () => {
+  if (inputNumber.value <= 1) {
+    inputNumber.value = 1;
   } else {
-    produtosAtualizados = [
-      ...produtos,
-      { id: produtoId, preco: precoProduto, quantia: 1 },
-    ];
-    produtos = produtosAtualizados;
+    inputNumber.value--;
   }
+});
+btnDelete.addEventListener("click", () => {
+  btnDelete.value = true;
+});
 
-  localStorage.setItem(
-    "@hambuguer:produto",
-    JSON.stringify(produtosAtualizados)
-  );
+function getInputElement(id) {
+  return document.getElementById(`number-${id}`);
+}
+
+function decrement(id) {
+  const input = getInputElement(id);
+  if (input.value <= 1) {
+    return;
+  }
+  input.value--;
+}
+
+function increment(id) {
+  const input = getInputElement(id);
+  input.value++;
 }

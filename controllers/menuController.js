@@ -23,7 +23,13 @@ const menuController = {
 
     if (produtoExistente) {
       produtosAtualizados = produto.map((p) =>
-        p.id === produtoId ? { ...p, quantidade: p.quantidade + 1 } : p
+        p.id === produtoId
+          ? {
+              ...p,
+              quantidade: p.quantidade + 1,
+              preco: p.preco + produtoInfo.preco,
+            }
+          : p
       );
     } else {
       produtosAtualizados = [
@@ -40,7 +46,6 @@ const menuController = {
     }
 
     req.session.produto = produtosAtualizados;
-    console.log(req.session.produto);
 
     return res.redirect("/menu");
   },

@@ -53,6 +53,7 @@ body {
   font-size: 20px;
   width: 30px;
   text-align: center;
+  border: none;
 }
 .confirm {
   display: flex;
@@ -104,5 +105,21 @@ img {
 }
 
 .image {
+  cursor: pointer;
+}
+
+.total-price > input {
+  margin: 0 5px;
+  padding: 0;
+  font-size: 20px;
+  width: 45px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.delete-btn {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
