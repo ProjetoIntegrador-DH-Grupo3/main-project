@@ -1,13 +1,14 @@
 const { Produtos } = require("../sequelize/models");
 
 const carrinhoController = {
-  index: async (req, res) => {
+  index: (req, res) => {
     const { produto } = req.session;
     res.render("carrinho", { produto });
   },
   store: async (req, res) => {
     const { produtoId, quantidade } = req.body;
     const { produto } = req.session;
+    console.log(req.body);
 
     let produtosAtualizados;
 
@@ -29,7 +30,17 @@ const carrinhoController = {
     req.session.produto = produtosAtualizados;
     res.redirect("/carrinho");
   },
-  delete: (req, res) => {},
+  delete: async (req, res) => {
+    const itemId = req.params.id;
+    const { produto } = req.session;
+    const item = await produto.filter((p) => p.id != itemId);
+    console.log(item);
+    req.session.produto = item;
+
+    console.log(req.session.produto);
+
+    res.redirect("/carrinho");
+  },
 };
 
 module.exports = carrinhoController;

@@ -42,9 +42,11 @@ body {
 
 .minus-btn {
   border: none;
+  background-color: transparent;
 }
 .plus-btn {
   border: none;
+  background-color: transparent;
 }
 
 .quantity > input {
@@ -54,6 +56,9 @@ body {
   width: 30px;
   text-align: center;
   border: none;
+  background-color: transparent;
+  cursor: default;
+  outline: none;
 }
 .confirm {
   display: flex;
@@ -116,6 +121,8 @@ img {
   text-align: center;
   border: none;
   background-color: transparent;
+  cursor: default;
+  outline: none;
 }
 
 .delete-btn {
