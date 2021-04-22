@@ -53,7 +53,9 @@
             >
               <img src="/img/minus.svg" alt="" />
             </button>
+
             <input
+              readonly
               class="number"
               id="number-<%=item.id %>"
               type="text"
@@ -73,21 +75,32 @@
           <div class="total-price">
             $
             <input
+              readonly
               name="finalPrice"
-              type="number"
+              type="text"
               class="final-price"
               value="<%= item.preco %>"
             />
           </div>
 
           <div class="buttom-delete">
-            <button class="delete-btn" type="submit" name="deleteBtn">
+            <button
+              class="delete-btn"
+              type="submit"
+              name="deleteBtn"
+              form="item-delete-<%=item.id%>"
+            >
               <img src="/img/x.svg" alt="" />
             </button>
           </div>
         </div>
         <hr />
       </form>
+      <form
+        method="POST"
+        id="item-delete-<%=item.id%>"
+        action="/carrinho/delete/<%=item.id%>"
+      ></form>
 
       <% } %> <% } %>
 
