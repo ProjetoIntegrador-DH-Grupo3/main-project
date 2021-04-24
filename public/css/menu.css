@@ -21,7 +21,7 @@
 }
 
 .menu-title {
-  margin-left: 20%;
+  margin-left: 15vw;
   opacity: 0.8;
   text-transform: uppercase;
   display: flex;
@@ -108,11 +108,11 @@ main {
 }
 
 .fundo-img {
-  width: 40%;
-  height: 25%;
+  width: 30vw;
+  height: 15vh;
   display: flex;
   position: absolute;
-  top: 20%;
+  top: 15vh;
   right: 50%;
 }
 
