@@ -12,7 +12,7 @@ const usersController = {
       const dataAtual = new Date();
 
       const usuario = await Usuario.create({
-        permissao: 1,
+        permissao: 0,
         nome: undefined,
         email: email,
         senha: bcrypt.hashSync(confirm_password, 8),
