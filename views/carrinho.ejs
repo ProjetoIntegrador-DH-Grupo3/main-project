@@ -20,13 +20,13 @@
 
     <div class="shopping-cart">
       <!-- Title -->
-      <div class="title" id="footer">Carrinho</div>
+      <div class="title" id="footer">
+        <img src="/img/shopping-cart-2.png" /> Produtos adicionados ao carrinho
+      </div>
       <hr />
 
       <!-- Product #1 -->
-      <% if(!produto) { %>
-      <h1>sem produtos no seu carrinho</h1>
-      <% } %> <% if(produto) { %> <% for (let item of produto) {%>
+      <% for (let item of produto) {%>
       <form method="POST" class="form" action="/carrinho">
         <input type="text" name="produtoId" value="<%= item.id %>" hidden />
         <div class="item">
@@ -102,7 +102,7 @@
         action="/carrinho/delete/<%=item.id%>"
       ></form>
 
-      <% } %> <% } %>
+      <% } %>
 
       <div class="confirm">
         <button class="confirm-btn" type="submit">Confirmar</button>

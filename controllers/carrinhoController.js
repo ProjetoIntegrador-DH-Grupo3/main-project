@@ -3,7 +3,12 @@ const { Produtos } = require("../sequelize/models");
 const carrinhoController = {
   index: (req, res) => {
     const { produto } = req.session;
-    res.render("carrinho", { produto });
+    if (produto == undefined || produto == "") {
+      res.render("carrinhoVazio");
+    }
+    if (produto) {
+      res.render("carrinho", { produto });
+    }
   },
   store: async (req, res) => {
     const { produtoId, quantidade } = req.body;
@@ -28,7 +33,12 @@ const carrinhoController = {
       );
     }
     req.session.produto = produtosAtualizados;
-    res.redirect("/carrinho");
+    if (req.session.produto) {
+      return res.redirect("carrinho");
+    }
+    if (req.session.produto == undefined || req.session.produto == "") {
+      return res.render("carrinhoVazio");
+    }
   },
   delete: async (req, res) => {
     const itemId = req.params.id;
@@ -37,9 +47,11 @@ const carrinhoController = {
     console.log(item);
     req.session.produto = item;
 
-    console.log(req.session.produto);
-
-    res.redirect("/carrinho");
+    if (req.session.produto == undefined || req.session.produto == "") {
+      res.render("carrinhoVazio");
+    } else {
+      res.redirect("/carrinho");
+    }
   },
 };
 
