@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- importando a font principal -->
+    <%- include('./partials/mainFont') %>
+    <!-- importando configurações HEAD e BootstrapCDN -->
+    <%- include('./partials/head') %>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/menuHamburguer.css" />
+    <link rel="stylesheet" href="/css/medias.css" />
+
+    <link rel="stylesheet" href="/css/carrinho.css" />
+    <link rel="stylesheet" href="/css/carrinhoVazio.css" />
+
+    <title>Carrinho</title>
+  </head>
+  <body>
+    <!-- importando o header da pasta partials -->
+    <%- include('./partials/header') %>
+
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title" id="footer">
+        <img src="/img/shopping-cart-2.png" /> Produtos adicionados ao carrinho
+      </div>
+      <hr />
+
+      <!-- Product #1 -->
+
+      <div class="card-none">
+        <p>O seu carrinho está vazio :(</p>
+        <p>Deseja olhar outros produtos similares?</p>
+        <p>Vamos lá não custa nada.</p>
+        <div class="redirect">
+          <a href="/menu">
+            <img
+              src="/img/shopping-cart-2.png"
+              alt="icone carrinho"
+            />COMPRANDO</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- importando o footer da pasta partials -->
+    <%- include('./partials/footer') %>
+    <script src="/javascripts/carrinho.js"></script>
+  </body>
+</html>

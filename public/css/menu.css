@@ -107,15 +107,28 @@ main {
   display: flex;
 }
 
-.fundo-img {
-  width: 30vw;
-  height: 15vh;
-  display: flex;
-  position: absolute;
-  top: 15vh;
-  right: 50%;
-}
-
 .form {
   text-align: center;
+}
+
+@media (max-height: 768px) {
+  .fundo-img {
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    position: absolute;
+    top: 25vh;
+    right: 50%;
+  }
+}
+
+@media (min-height: 769px) {
+  .fundo-img {
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    top: 12vh;
+    right: 50%;
+  }
 }
