@@ -21,7 +21,13 @@
 }
 
 .menu-title {
+<<<<<<< HEAD
   margin-left: 15vw;
+=======
+  
+  margin-left: 15vw;
+
+>>>>>>> 9b5640a (Acidionando efeito em  Zona Buguer)
   opacity: 0.8;
   text-transform: uppercase;
   display: flex;
@@ -108,14 +114,45 @@ main {
 }
 
 .fundo-img {
+<<<<<<< HEAD
   width: 30vw;
   height: 15vh;
   display: flex;
   position: absolute;
   top: 15vh;
+=======
+  width: 35vw;
+  height: 25vh;
+  display: flex;
+  position: absolute;
+  top: 25vh;
+>>>>>>> 9b5640a (Acidionando efeito em  Zona Buguer)
   right: 50%;
+
 }
 
 .form {
   text-align: center;
+}
+
+@media (max-height: 768px) {
+  .fundo-img {
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    position: absolute;
+    top: 25vh;
+    right: 50%;
+  }
+}
+
+@media (min-height: 769px) {
+  .fundo-img {
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    top: 12vh;
+    right: 50%
+  }
 }
