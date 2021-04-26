@@ -1,9 +1,8 @@
 const express = require("express");
-const router = express.Router();
 
 const indexController = {
   index: (_req, res) => {
-    res.render("index", { title: "home" });
+    res.render("index");
   },
   contato: (req, res) => {
     res.render("contato");
@@ -14,9 +13,6 @@ const indexController = {
   cadastro: (_req, res) => {
     res.render("cadastro");
   },
-  // registro: (req, res) => {
-  //   res.render("registro");
-  // },
 };
 
 module.exports = indexController;
