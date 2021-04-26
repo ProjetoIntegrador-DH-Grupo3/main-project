@@ -23,10 +23,16 @@ body {
   flex-direction: column;
 }
 .title {
-  padding: 10px 50px;
+  display: flex;
+  padding: 10px 25px 5px 0;
   font-size: 32px;
   text-transform: uppercase;
   cursor: default;
+}
+.title img {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
 }
 
 .item {

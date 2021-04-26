@@ -113,6 +113,7 @@ main {
   display: flex;
 }
 
+<<<<<<< HEAD
 .fundo-img {
   width: 30vw;
   height: 15vh;
@@ -123,6 +124,8 @@ main {
 
 }
 
+=======
+>>>>>>> b6053d04a76a1be20676cf37851832de1b0a1d1e
 .form {
   text-align: center;
 }
@@ -145,6 +148,10 @@ main {
     display: flex;
     position: absolute;
     top: 12vh;
+<<<<<<< HEAD
     right: 50%
+=======
+    right: 50%;
+>>>>>>> b6053d04a76a1be20676cf37851832de1b0a1d1e
   }
 }
