@@ -148,7 +148,7 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Contato */
+/* Conecte-se */
 
 .connect {
   display: flex;
@@ -156,22 +156,24 @@
   align-items: center;
   width: 100%;
   height: 200px;
-  background-color: #2d2d2d;
-  /* background: #000; */
+  background: #000;
 }
 
 .txt {
   text-align: center;
-  font-family: Inter;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 40px;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .txt2 {
-  color: #f5c700;
+  color: rgb(255, 118, 6);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 50px;
 }
 
 /* FORMULÁRIO PÁGINA INDEX */
@@ -195,6 +197,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
 }
 
 /* formulario */
@@ -314,17 +317,25 @@
   position:relative;
   background: rgba(184, 182, 182, 0.534);
   width: 100vw;
-  height: 900px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .zonaImg {
-display: block;
+ display: block;
  width: 100vh;
- margin-left:350px;
- margin-top: 0px;
- padding-top: 60px;
- position: flex;
  justify-content: center;
+}
+
+.zona-t {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ align-items: center;
+ margin-top: 70px;
 }
 
 .p1 {
@@ -335,9 +346,6 @@ display: block;
   color: rgb(240, 111, 6);
   -webkit-text-stroke: 5px #fff;
   opacity: 0.9;
-  position: absolute;
-  top: 25vh;
-  left: 70vh;
   animation: animate 5s linear infinite;
 }
 
@@ -349,9 +357,6 @@ display: block;
   color: rgb(240, 111, 6);
   -webkit-text-stroke: 5px #fff;
   opacity: 0.9;
-  position: absolute;
-  top: 70vh;
-  left: 45vh;
   animation: animate 5s linear infinite;
 }
 
@@ -371,19 +376,6 @@ display: block;
     0 0 160px rgb(240, 111, 6);
   }
 }
-/* 
-@media (max-height: 768px) {
-  .p1 .p2 {
-    font-size: 160px;
-  }
-} */
-
-/* @media (max-width: 911px) {
-  #z-fundo .zonaImg .p1 .p2 {
-    background:#111;
-  }
-} */
-
 
 @media (max-width: 1039px){
   #z-fundo .p1 {
@@ -391,14 +383,9 @@ display: block;
   }
   #z-fundo .p2{
     font-size: 15vw;
-    /* left: 2vh; */
   }
   #z-fundo .zonaImg {
     width: 50vw;
-  }
-  #z-fundo {
-  min-height: 900px;
- 
   }
 } 
 /* //Zona Burguer */
@@ -413,10 +400,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
-  height: 80%;
-
+  height: 100%;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -486,7 +471,7 @@ section {
 
 .esquerda-col {
   width: 50%;
-  height: 109vh;
+  
   background: #fff;
   justify-content: center;
   align-items: center;
