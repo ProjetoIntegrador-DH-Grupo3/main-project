@@ -21,13 +21,7 @@
 }
 
 .menu-title {
-<<<<<<< HEAD
   margin-left: 15vw;
-=======
-  
-  margin-left: 15vw;
-
->>>>>>> 9b5640a (Acidionando efeito em  Zona Buguer)
   opacity: 0.8;
   text-transform: uppercase;
   display: flex;
@@ -47,11 +41,9 @@ main {
 .cardapio {
   width: 250px;
   height: 400px;
-
   box-shadow: -3px 1px 13px -2px rgba(0, 0, 0, 0.73);
   border-radius: 5px;
   border-bottom: 70px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +52,8 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Poppins", sans-serif;
+
+  background: rgba(184, 182, 182, 0.534);
 }
 
 .topCard {
@@ -83,7 +77,6 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   padding-top: 10px;
 }
 
@@ -113,7 +106,6 @@ main {
   display: flex;
 }
 
-<<<<<<< HEAD
 .fundo-img {
   width: 30vw;
   height: 15vh;
@@ -124,8 +116,6 @@ main {
 
 }
 
-=======
->>>>>>> b6053d04a76a1be20676cf37851832de1b0a1d1e
 .form {
   text-align: center;
 }
@@ -148,10 +138,12 @@ main {
     display: flex;
     position: absolute;
     top: 12vh;
-<<<<<<< HEAD
     right: 50%
-=======
-    right: 50%;
->>>>>>> b6053d04a76a1be20676cf37851832de1b0a1d1e
   }
 }
+
+@media (max-width: 1041px){
+  .fundo-img {
+    min-width:45vw;
+  }
+} 
