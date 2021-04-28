@@ -89,17 +89,19 @@ main {
     rgb(255, 165, 0),
     rgb(255, 118, 6)
   );
-  color: black;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   width: 50%;
-  opacity: 0.8;
   cursor: pointer;
   border-radius: 3px;
+  letter-spacing: 1px;
 }
 
 .bottomCard button:hover {
-  opacity: 1;
+  background:rgb(255, 118, 6);
+  color: black;
+  font-weight: bold;
 }
 
 .fundo-texto {

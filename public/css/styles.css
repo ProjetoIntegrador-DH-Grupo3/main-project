@@ -65,6 +65,12 @@
   color: #fff;
 }
 
+.nav-item #traço:hover {
+  color: #111;
+}
+
+
+
 /* Slide */
 
 .contencao {
@@ -468,13 +474,13 @@ section {
 
 .esquerda-col {
   width: 50%;
-  
   background: #fff;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .esquerda-col h3 {
@@ -571,7 +577,10 @@ section {
 
 .logo-text:hover {
  color: rgba(255, 158, 1, 1);
+ font-size: 40px;
+ transition:0.4s;
 }
+
 .socials a i {
   color: white;
   font-size: 25px;
@@ -580,4 +589,6 @@ section {
 
 .socials i:hover {
  color: rgba(255, 158, 1, 1);
+ font-size: 35px;
+ transition:0.4s;
 }
