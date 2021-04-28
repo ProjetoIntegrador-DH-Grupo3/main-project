@@ -27,6 +27,7 @@ body {
   padding: 10px 25px 5px 0;
   font-size: 32px;
   text-transform: uppercase;
+  font-weight: bold;
   cursor: default;
 }
 .title img {
@@ -72,18 +73,29 @@ body {
   padding: 25px 0;
 }
 .confirm-btn {
-  background-color: rgb(255, 165, 0);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 165, 0),
+    rgb(255, 118, 6)
+  );
   border: none;
-  color: black;
-  padding: 15px 32px;
+  color: #fff;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-weight: 600;
+  /* font-weight: 600; */
   cursor: pointer;
   border-radius: 5px;
   border-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.confirm-btn:hover{
+  background:rgb(255, 118, 6);
+  color: black;
+  font-weight: bold;
 }
 
 img {

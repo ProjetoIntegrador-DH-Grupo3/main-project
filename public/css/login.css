@@ -101,6 +101,7 @@ section .container .user .formBx input {
 /* input */
 .inputError::placeholder {
     color: red;
+    font-style: italic;
     opacity:1;
 }
 
@@ -114,11 +115,13 @@ section .container .user .formBx input:invalid{
 border-color: red;
 } */
 
-*::before {
+
+#exclamation{
     color:red;
 }
 .span {
     color: red;
+    font-style: italic;
     /* padding-left: 50px; */
 }
 
