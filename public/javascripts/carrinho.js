@@ -14,3 +14,15 @@ function increment(id) {
   const input = getInputElement(id);
   input.value++;
 }
+
+function getElement(id) {
+  return document.getElementById(`deleteBtn-${id}`);
+}
+
+function deleteItem(id) {
+  const item = getElement(id);
+  const valor = confirm("Deseja exlcuir este item ?");
+  if (!valor) {
+    item.removeAttribute("form");
+  }
+}

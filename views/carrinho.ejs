@@ -87,7 +87,8 @@
             <button
               class="delete-btn"
               type="submit"
-              name="deleteBtn"
+              id="deleteBtn-<%=item.id%>"
+              onclick="deleteItem('<%=item.id%>')"
               form="item-delete-<%=item.id%>"
             >
               <img src="/img/x.svg" alt="" />
