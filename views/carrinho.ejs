@@ -21,7 +21,9 @@
     <div class="shopping-cart">
       <!-- Title -->
       <div class="title" id="footer">
-        <img src="/img/shopping-cart-2.png" /> Produtos adicionados ao carrinho
+        <!-- <img src="/img/shopping-cart-2.png" /> 
+        Produtos adicionados ao carrinho -->
+        Meu CARRINHO
       </div>
       <hr />
 
@@ -51,7 +53,7 @@
               name="minusBtn"
               onclick="decrement('<%=item.id%>')"
             >
-              <img src="/img/minus.svg" alt="" />
+              <img src="/img/minus.svg" alt="" class="s"/>
             </button>
 
             <input
@@ -68,7 +70,7 @@
               name="plusBtn"
               onclick="increment('<%=item.id%>')"
             >
-              <img src="/img/plus.svg" alt="" />
+              <img src="/img/plus.svg" alt="" class="s" />
             </button>
           </div>
 
@@ -91,7 +93,7 @@
               onclick="deleteItem('<%=item.id%>')"
               form="item-delete-<%=item.id%>"
             >
-              <img src="/img/x.svg" alt="" />
+              <img src="/img/x.svg" alt="" class="x"/>
             </button>
           </div>
         </div>
@@ -106,7 +108,7 @@
       <% } %>
 
       <div class="confirm">
-        <button class="confirm-btn" type="submit">Confirmar</button>
+        <button class="confirm-btn" type="submit">Finalizar Comprar</button>
       </div>
     </div>
 

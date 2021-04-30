@@ -70,6 +70,11 @@
 }
 
 
+#mHamburguer .nav-item a:hover {
+  font-size: 30px;
+  transition:0.5s;
+}
+
 
 /* Slide */
 
@@ -480,7 +485,7 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .esquerda-col h3 {
