@@ -28,7 +28,8 @@
  text-decoration: none;
  letter-spacing: 1px;
  text-decoration:none;
- background-image: linear-gradient( to right, rgb(255, 165, 0), rgb(255, 118, 6) );
+ background:rgb(255, 165, 0);
+ opacity:0.85;
  color: #fff;
  padding: 12px 18px;
  border-radius:5px;
@@ -37,9 +38,11 @@
 }
 
 .redirect a:hover{
-  background: rgb(255, 118, 6);
-  color: black;
-  font-weight: bold;
+  opacity: 1;
+}
+
+.redirect a:focus{
+  opacity: 0.7;
 }
 
 p {

@@ -84,24 +84,24 @@ main {
   margin-top: 30px;
   display: block;
   font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 165, 0),
-    rgb(255, 118, 6)
-  );
-  color: #fff;
+  background:rgb(255, 165, 0);
+  opacity:0.9;
+  color: #111;
   border: none;
   padding: 10px 20px;
   width: 50%;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
   letter-spacing: 1px;
 }
 
 .bottomCard button:hover {
-  background:rgb(255, 118, 6);
-  color: black;
-  font-weight: bold;
+  opacity:1;
+  color: #fff;
+}
+
+.bottomCard button:focus {
+  opacity:0.7;
 }
 
 .fundo-texto {

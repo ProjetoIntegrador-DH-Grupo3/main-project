@@ -21,7 +21,7 @@ function getElement(id) {
 
 function deleteItem(id) {
   const item = getElement(id);
-  const valor = confirm("Deseja exlcuir este item ?");
+  const valor = confirm("Deseja excluir este item ?");
   if (!valor) {
     item.removeAttribute("form");
   }
