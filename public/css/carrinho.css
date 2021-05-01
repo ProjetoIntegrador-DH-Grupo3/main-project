@@ -149,7 +149,7 @@ img {
 .s{
   background:rgb(255, 165, 0);
   opacity:0.8;
-  
+  border-radius: 5px;
 }
 
 .s:hover{
@@ -159,6 +159,7 @@ img {
 .x {
   background: red;
   opacity:0.85;
+  border-radius: 5px;
 }
 
 .x:hover{
