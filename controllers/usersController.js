@@ -2,7 +2,7 @@ const { Usuario } = require("../sequelize/models");
 const bcrypt = require("bcryptjs");
 
 const usersController = {
-  index: (_req, res) => res.render("registro"),
+  index: (_req, res) => res.render("auth/registro"),
   store: async (req, res) => {
     const { email, confirm_password, create_password } = req.body;
 
