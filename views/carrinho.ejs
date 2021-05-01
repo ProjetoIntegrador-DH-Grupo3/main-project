@@ -87,10 +87,10 @@
 
           <div class="buttom-delete">
             <button
-              class="delete-btn"
+               class="delete-btn"
               type="submit"
               id="deleteBtn-<%=item.id%>"
-              onclick="deleteItem('<%=item.id%>')"
+              
               form="item-delete-<%=item.id%>"
             >
               <img src="/img/x.svg" alt="" class="x"/>
@@ -114,6 +114,7 @@
 
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="/javascripts/carrinho.js"></script>
   </body>
 </html>
