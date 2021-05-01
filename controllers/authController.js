@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 
 const authController = {
   index: (_req, res) => {
-    res.render("login");
+    res.render("auth/login");
   },
 
   store: async (req, res) => {
@@ -14,11 +14,11 @@ const authController = {
       },
     });
     if (!usuario) {
-      return res.render("login", {error:true});
+      return res.render("auth/login", { error: true });
     }
     const resultado = bcrypt.compareSync(password, usuario.senha);
     if (!resultado) {
-      return res.render("login", {error:true});
+      return res.render("auth/login", { error: true });
     }
 
     req.session.user = {
