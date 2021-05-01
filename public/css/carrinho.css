@@ -166,3 +166,6 @@ img {
   opacity:1;
 }
 
+.shopping-cart#blur.active{
+  filter: blur(20px);
+}

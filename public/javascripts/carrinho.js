@@ -54,4 +54,8 @@ for (let index = 0; index < botoes.length; index++) {
   
 }
 
-
+// Efeito blur no carrinho
+function toggle(){
+  var blur = document.getElementById('blur');
+     blur.classList.toggle("active")
+}
