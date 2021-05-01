@@ -18,7 +18,7 @@
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
 
-    <div class="shopping-cart">
+    <div class="shopping-cart"  id="blur">
       <!-- Title -->
       <div class="title" id="footer">
         <!-- <img src="/img/shopping-cart-2.png" /> 
@@ -93,7 +93,7 @@
               
               form="item-delete-<%=item.id%>"
             >
-              <img src="/img/x.svg" alt="" class="x"/>
+              <img src="/img/x.svg" alt="" class="x" onclick="toggle()" />
             </button>
           </div>
         </div>
@@ -115,6 +115,6 @@
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="/javascripts/carrinho.js"></script>
+    <script type="text/javascript" src="/javascripts/carrinho.js"></script>
   </body>
 </html>
