@@ -1,9 +1,11 @@
 const express = require("express");
 
 const indexController = {
-  index: (_req, res) => {
-    res.render("index");
+  index: (req, res) => {
+    const { user } = req.session;
+    res.render("index", { user });
   },
+
   contato: (req, res) => {
     res.render("contato");
   },

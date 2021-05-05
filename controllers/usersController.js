@@ -2,9 +2,12 @@ const { Usuario } = require("../sequelize/models");
 const bcrypt = require("bcryptjs");
 
 const usersController = {
-  index: (_req, res) => res.render("registro"),
+  index: (req, res) => {
+    const { user } = req.session;
+    res.render("auth/registro", { user });
+  },
   store: async (req, res) => {
-    const { email, confirm_password, create_password } = req.body;
+    const { NomeUsuario, email, confirm_password, create_password } = req.body;
 
     if (confirm_password != create_password) {
       res.redirect("login");
@@ -13,7 +16,7 @@ const usersController = {
 
       const usuario = await Usuario.create({
         permissao: 1,
-        nome: undefined,
+        nome: NomeUsuario,
         email: email,
         senha: bcrypt.hashSync(confirm_password, 8),
         created_at: dataAtual,

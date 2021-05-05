@@ -2,9 +2,9 @@
 <html lang="pt-br">
   <head>
     <!-- importando configurações HEAD e BootstrapCDN -->
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
     <!-- importando a font principal -->
-    <%- include('./partials/mainFont') %>
+    <%- include('../partials/mainFont') %>
     <link rel="stylesheet" text="text/css" href="/css/styles.css" />
     <link rel="stylesheet" text="text/css" href="/css/login.css" />
     <link rel="stylesheet" href="/css/menuHamburguer.css" />
@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- importando o header da pasta partials -->
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <section class="fundoR">
       <div class="container">
         <div class="user siginBx">
@@ -21,7 +21,13 @@
           <div class="formBx">
             <form method="POST">
               <h2>Criar sua conta</h2>
-              <input type="text" placeholder="Email" name="email" required/>
+              <input
+                type="text"
+                placeholder="Nome"
+                name="NomeUsuario"
+                required
+              />
+              <input type="text" placeholder="Email" name="email" required />
               <input
                 type="password"
                 placeholder="Create Password"
@@ -37,16 +43,16 @@
               <input type="submit" value="Cadastrar" id="login" />
               <p class="signup">
                 Já tem uma conta?
-                <a href="/users/login" id="cadastro" onclick="toggleForm()"> Entre.</a>
+                <a href="/users/login" id="cadastro" onclick="toggleForm()">
+                  Entre.</a
+                >
               </p>
             </form>
           </div>
         </div>
       </div>
     </section>
-
   </body>
 
-  
   <script type="text/javascript" src="/javascripts/login.js"></script>
 </html>

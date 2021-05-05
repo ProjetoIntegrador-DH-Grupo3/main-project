@@ -2,34 +2,34 @@
 <html lang="pt-br">
   <head>
     <!-- importando configurações HEAD e BootstrapCDN -->
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
     <!-- importando a font principal -->
-    <%- include('./partials/mainFont') %>
+    <%- include('../partials/mainFont') %>
     <link rel="stylesheet" text="text/css" href="/css/styles.css" />
     <link rel="stylesheet" text="text/css" href="/css/login.css" />
     <link rel="stylesheet" href="/css/menuHamburguer.css" />
     <link rel="stylesheet" href="/css/medias.css" />
-    
+
     <title>Login</title>
   </head>
   <body>
     <!-- importando o header da pasta partials -->
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <section>
       <div class="container">
         <div class="user siginBx">
           <div class="imgBx"><img src="/img/login.jpg" /></div>
           <div class="formBx">
             <form method="POST">
-             
               <h2>Fazer login</h2>
-              <% if (typeof error == 'undefined') {%>
-                <% } else { %> 
-                  <i id="exclamation" class="fa fa-exclamation-circle"></i>
-              <span class="span">Usuário ou senha inválida!</span> 
-                <% } %> 
-              <input  class="<%= typeof error == 'undefined'? "" : "inputError"%>" type="text" placeholder="Email" name="email" id="email"  required/>
-              <input class="<%= typeof error == 'undefined'? "" : "inputError"%>" type="password" placeholder="Password" name="password" required/>
+              <% if (typeof error == 'undefined') {%> <% } else { %>
+              <i id="exclamation" class="fa fa-exclamation-circle"></i>
+              <span class="span">Usuário ou senha inválida!</span>
+              <% } %> <input class="<%= typeof error == 'undefined'? "" :
+              "inputError"%>" type="text" placeholder="Email" name="email"
+              id="email" required/> <input class="<%= typeof error ==
+              'undefined'? "" : "inputError"%>" type="password"
+              placeholder="Password" name="password" required/>
               <input type="submit" value="Login" id="login" />
               <p class="signup">
                 Não tem uma conta?
@@ -42,8 +42,6 @@
         </div>
       </div>
     </section>
-
-
   </body>
 
   <!-- <script type="text/javascript" src="/javascripts/index.js"></script> -->

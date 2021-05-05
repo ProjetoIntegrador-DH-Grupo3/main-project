@@ -2,8 +2,9 @@ const { Usuario } = require("../sequelize/models");
 const bcrypt = require("bcryptjs");
 
 const authController = {
-  index: (_req, res) => {
-    res.render("login");
+  index: (req, res) => {
+    const { user } = req.session;
+    res.render("auth/login", { user });
   },
 
   store: async (req, res) => {
@@ -13,21 +14,21 @@ const authController = {
         email,
       },
     });
+
     if (!usuario) {
-      return res.render("login", {error:true});
+      return res.render("auth/login", { error: true });
     }
     const resultado = bcrypt.compareSync(password, usuario.senha);
     if (!resultado) {
-      return res.render("login", {error:true});
+      return res.render("auth/login", { error: true });
     }
 
     req.session.user = {
       id: usuario.id,
-      nome: usuario.email,
+      nome: usuario.nome,
       admin: usuario.permissao,
     };
-    console.log(req.session.user.admin);
-
+    console.log(req.session.user);
     return res.redirect("/");
   },
 };
