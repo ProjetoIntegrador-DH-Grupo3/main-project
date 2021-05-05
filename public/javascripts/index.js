@@ -1,5 +1,7 @@
 window.load = slide(1);
 
+const listaLink = document.querySelectorAll("#mHamburguer ul li a");
+
 var bgNumber = 1;
 var allBgs = 3;
 var clearTime;
@@ -62,3 +64,10 @@ document.getElementById("contato_home").addEventListener("submit", function(even
   )
 })
 
+// fechamento do menu hamburguer.
+listaLink.forEach ((link)=> {
+  link.onclick = ()=> {
+    const hambuguer = document.querySelector("#menu-hamburguer")
+    hambuguer.checked = false;
+  }
+});
