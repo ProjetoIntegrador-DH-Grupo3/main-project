@@ -166,6 +166,11 @@ img {
   opacity:1;
 }
 
-.shopping-cart#blur.active{
-  filter: blur(20px);
+
+body.swal2-shown > [aria-hidden="true"] {
+  filter: blur(10px);
+}
+
+body > * {
+  transition: 0.1s filter linear;
 }

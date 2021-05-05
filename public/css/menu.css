@@ -149,3 +149,16 @@ main {
     min-width:45vw;
   }
 } 
+
+/* Sweet alert */
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-content {
+  color: white;
+}
