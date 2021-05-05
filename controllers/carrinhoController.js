@@ -2,12 +2,13 @@ const { Produtos } = require("../sequelize/models");
 
 const carrinhoController = {
   index: (req, res) => {
-    const { produto } = req.session;
+    const { produto, user } = req.session;
+
     if (produto == undefined || produto == "") {
-      res.render("carrinhoVazio");
+      res.render("carrinhoVazio", { user });
     }
     if (produto) {
-      res.render("carrinho", { produto });
+      res.render("carrinho", { produto, user });
     }
   },
   store: async (req, res) => {

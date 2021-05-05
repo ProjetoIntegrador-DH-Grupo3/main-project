@@ -18,10 +18,16 @@
         </li>
 
         <li class="nav-item">
+          <% if(user){ %>
+            <a class="nav-link1"> Oi <%= user.nome %> </a>
+            <% } else { %>  
           <a class="nav-link1" href="/users/login">Login</a>
+          <%}%>  
         </li>
         <li class="nav-item">
-          <a class="nav-link1" href="/carrinho"><i class='fas fa-shopping-cart' style='font-size:22px;'></i></a>
+          <a class="nav-link1" href="/carrinho"
+            ><i class="fas fa-shopping-cart" style="font-size: 22px"></i
+          ></a>
         </li>
       </ul>
     </div>
@@ -33,13 +39,21 @@
         </li>
 
         <li class="nav-item">
+          <% if(user){ %>
+            <a class="nav-link"> Oi <%= user.nome %> </a>
+            <% } else { %>  
           <a class="nav-link" href="/users/login">Login</a>
+          <%}%>  
+        </li>
+
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="traço">|</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/carrinho"><i class='fas fa-shopping-cart' style='font-size:22px;'></i></a>
+          <a class="nav-link" href="/carrinho"
+            ><i class="fas fa-shopping-cart" style="font-size: 22px"></i
+          ></a>
         </li>
       </ul>
     </div>

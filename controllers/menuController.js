@@ -1,12 +1,13 @@
 const { Produtos, Pedidos } = require("../sequelize/models");
 
 const menuController = {
-  index: async (_req, res) => {
+  index: async (req, res) => {
+    const { user } = req.session;
     const produtos = await Produtos.findAll({
       order: [["createdAt", "DESC"]],
     });
 
-    res.render("menu", { produtos });
+    res.render("menu", { user, produtos });
   },
   store: async (req, res) => {
     const { produtoId } = req.body;
