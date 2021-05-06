@@ -44,7 +44,7 @@
 
               <li class="nav-item">
                 <% if(user){ %>
-                  <a class="nav-link1"> Oi <%= user.nome %> </a>
+                  <a class="nav-link1"><i class="fas fa-user-circle"></i> Oi <%= user.nome %> </a>
                   <% } else { %>  
                 <a class="nav-link1" href="/users/login">Login</a>
                 <%}%>  
@@ -73,9 +73,9 @@
 
               <li class="nav-item">
                 <% if(user){ %>
-                  <a class="nav-link"> Oi <%= user.nome %> </a>
+                  <a class="nav-link"><i class="fas fa-user-circle"></i> <%= user.nome %> </a>
                   <% } else { %>  
-                <a class="nav-link" href="/users/login">Login</a>
+                <a class="nav-link" href="/users/login"> <i class="fas fa-user"></i> Login </a>
                 <%}%>  
               </li>
 
