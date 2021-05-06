@@ -42,14 +42,21 @@ for (let index = 0; index < botoes.length; index++) {
   confirmButtonText: 'Sim, apagar!'
     }).then((result) => {
       if (result.isConfirmed) {
-      form.submit();
-        Swal.fire(
-          'O item foi removido!',
-          '',
-          'success'
-        )
+        setTimeout(function() {
+          form.submit()
+          Swal.fire(
+            'O item foi removido!',
+            '',
+            'success'
+          );
+        } , 500);
       }
     })
   })
   
 }
+
+
+// setTimeout(function() {
+//   form.submit()
+// } , 1000)
