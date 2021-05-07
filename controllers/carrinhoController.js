@@ -47,13 +47,8 @@ const carrinhoController = {
     const item = await produto.filter((p) => p.id != itemId);
     console.log(item);
     req.session.produto = item;
-
-    if (req.session.produto == undefined || req.session.produto == "") {
-      res.render("carrinhoVazio");
-    } else {
-      res.redirect("/carrinho");
-    }
+    res.redirect("/carrinho");
   },
-};
+}
 
 module.exports = carrinhoController;
