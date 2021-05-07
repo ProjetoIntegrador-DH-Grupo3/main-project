@@ -157,7 +157,7 @@
 <!-- Contato -->
         <div class="container">
           <div class="formBx" id="formBx" >
-              <form action="https://api.staticforms.xyz/submit" method="post" id="contato_home">
+              <form onsubmit="event.preventDefault(); alert_contato()" action="https://api.staticforms.xyz/submit" method="post" id="contato_home">
                 <input type="hidden" name="accessKey" value="19d0adba-6d15-4f35-a92c-6b2041448fec">
                  <input type="hidden" name="redirectTo" value="http://localhost:3000/#formBx?sucess">
 

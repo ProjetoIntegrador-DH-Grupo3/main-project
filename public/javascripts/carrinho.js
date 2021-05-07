@@ -44,19 +44,19 @@ for (let index = 0; index < botoes.length; index++) {
       if (result.isConfirmed) {
         setTimeout(function() {
           form.submit()
+        } , 5500);
           Swal.fire(
             'O item foi removido!',
             '',
             'success'
           );
-        } , 500);
+          let botoesok = document.querySelectorAll(".swal2-confirm");
+          for (let btnok of botoesok) {
+            btnok.onclick = function(){
+              form.submit()
+            }
+          }
       }
     })
   })
-  
 }
-
-
-// setTimeout(function() {
-//   form.submit()
-// } , 1000)

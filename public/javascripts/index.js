@@ -56,14 +56,23 @@ function handleContactClick() {
 }
 
 // alert do botao contato
-document.getElementById("contato_home").addEventListener("submit", function(event) {
-  
+function alert_contato (){
   Swal.fire(
     'Obrigado pela mensagem!',
     'Enviado com Sucesso!',
     'success'
   )
-})
+  let botoesok = document.querySelectorAll(".swal2-confirm");
+          for (let btnok of botoesok) {
+            btnok.onclick = function(){
+              contato_home.submit()
+            }
+          }
+          setTimeout(function() {
+            contato_home.submit()
+          } , 3000);
+}
+  
 
 // fechamento do menu hamburguer.
 listaLink.forEach ((link)=> {
