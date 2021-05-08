@@ -18,7 +18,7 @@
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
 
-    <div class="shopping-cart"  id="blur">
+    <div class="shopping-cart" id="blur">
       <!-- Title -->
       <div class="title" id="footer">
         <!-- <img src="/img/shopping-cart-2.png" /> 
@@ -53,7 +53,7 @@
               name="minusBtn"
               onclick="decrement('<%=item.id%>')"
             >
-              <img src="/img/minus.svg" alt="" class="s"/>
+              <img src="/img/minus.svg" alt="" class="s" />
             </button>
 
             <input
@@ -87,13 +87,12 @@
 
           <div class="buttom-delete">
             <button
-               class="delete-btn"
+              class="delete-btn"
               type="submit"
               id="deleteBtn-<%=item.id%>"
-              
               form="item-delete-<%=item.id%>"
             >
-              <img src="/img/x.svg" alt="" class="x" onclick="toggle()" />
+              <img src="/img/trash-2.svg" alt="" class="x" onclick="toggle()" />
             </button>
           </div>
         </div>
@@ -106,6 +105,24 @@
       ></form>
 
       <% } %>
+
+      <div class="allItens">
+        <form action="">
+          <div class="cupom">
+            <label name="cupom">Digite seu cupom</label>
+            <div class="cupom-2">
+              <input type="text" name="cupom" />
+              <button name="cupom">Aplicar</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="prices">
+          <span class="Subtotal">Subtotal $ 25</span>
+          <span class="Desconto">Desconto $ 25</span>
+          <span class="Total">Total $ 25</span>
+        </div>
+      </div>
 
       <div class="confirm">
         <button class="confirm-btn" type="submit">Finalizar Comprar</button>
