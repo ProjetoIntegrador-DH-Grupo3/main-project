@@ -42,20 +42,21 @@ for (let index = 0; index < botoes.length; index++) {
   confirmButtonText: 'Sim, apagar!'
     }).then((result) => {
       if (result.isConfirmed) {
-      form.submit();
-        Swal.fire(
-          'O item foi removido!',
-          '',
-          'success'
-        )
+        setTimeout(function() {
+          form.submit()
+        } , 5500);
+          Swal.fire(
+            'O item foi removido!',
+            '',
+            'success'
+          );
+          let botoesok = document.querySelectorAll(".swal2-confirm");
+          for (let btnok of botoesok) {
+            btnok.onclick = function(){
+              form.submit()
+            }
+          }
       }
     })
   })
-  
-}
-
-// Efeito blur no carrinho
-function toggle(){
-  var blur = document.getElementById('blur');
-     blur.classList.toggle("active")
 }

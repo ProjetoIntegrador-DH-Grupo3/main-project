@@ -44,7 +44,7 @@
 
               <li class="nav-item">
                 <% if(user){ %>
-                  <a class="nav-link1"> Oi <%= user.nome %> </a>
+                  <a class="nav-link1"><i class="fas fa-user-circle"></i> Oi <%= user.nome %> </a>
                   <% } else { %>  
                 <a class="nav-link1" href="/users/login">Login</a>
                 <%}%>  
@@ -73,9 +73,9 @@
 
               <li class="nav-item">
                 <% if(user){ %>
-                  <a class="nav-link"> Oi <%= user.nome %> </a>
+                  <a class="nav-link"><i class="fas fa-user-circle"></i> <%= user.nome %> </a>
                   <% } else { %>  
-                <a class="nav-link" href="/users/login">Login</a>
+                <a class="nav-link" href="/users/login"> <i class="fas fa-user"></i> Login </a>
                 <%}%>  
               </li>
 
@@ -157,7 +157,7 @@
 <!-- Contato -->
         <div class="container">
           <div class="formBx" id="formBx" >
-              <form action="https://api.staticforms.xyz/submit" method="post" id="contato_home">
+              <form onsubmit="event.preventDefault(); alert_contato()" action="https://api.staticforms.xyz/submit" method="post" id="contato_home">
                 <input type="hidden" name="accessKey" value="19d0adba-6d15-4f35-a92c-6b2041448fec">
                  <input type="hidden" name="redirectTo" value="http://localhost:3000/#formBx?sucess">
 
