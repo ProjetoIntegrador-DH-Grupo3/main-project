@@ -53,7 +53,7 @@ main {
   transition: all 0.3s ease;
   font-family: "Poppins", sans-serif;
 
-  background: rgba(184, 182, 182, 0.534);
+  background: #fff;
 }
 
 .topCard {
@@ -84,8 +84,8 @@ main {
   margin-top: 30px;
   display: block;
   font-size: 1rem;
-  background:rgb(255, 165, 0);
-  opacity:0.9;
+  background: rgb(255, 165, 0);
+  opacity: 0.9;
   color: #111;
   border: none;
   padding: 10px 20px;
@@ -96,12 +96,12 @@ main {
 }
 
 .bottomCard button:hover {
-  opacity:1;
+  opacity: 1;
   color: #fff;
 }
 
 .bottomCard button:focus {
-  opacity:0.7;
+  opacity: 0.7;
 }
 
 .fundo-texto {
@@ -115,7 +115,6 @@ main {
   position: absolute;
   top: 15vh;
   right: 50%;
-
 }
 
 .form {
@@ -140,12 +139,12 @@ main {
     display: flex;
     position: absolute;
     top: 12vh;
-    right: 50%
+    right: 50%;
   }
 }
 
-@media (max-width: 1041px){
+@media (max-width: 1041px) {
   .fundo-img {
-    min-width:45vw;
+    min-width: 45vw;
   }
-} 
+}
