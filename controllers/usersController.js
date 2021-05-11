@@ -26,7 +26,11 @@ const usersController = {
       if (!usuario) {
         return res.send("Houve um erro ao salvar o usuario");
       }
-
+      req.session.user = {
+        id: usuario.id,
+        nome: usuario.nome,
+        admin: usuario.permissao,
+      };
       res.redirect("/");
     }
   },
