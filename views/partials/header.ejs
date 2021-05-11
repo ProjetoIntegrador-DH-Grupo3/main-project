@@ -19,11 +19,18 @@
 
         <li class="nav-item">
           <% if(user){ %>
-            <a class="nav-link1"><i class="fas fa-user-circle"></i> <%= user.nome %> </a>
-            <% } else { %>  
+          <a class="nav-link1"
+            ><i class="fas fa-user-circle"></i> <%= user.nome %>
+          </a>
+          <% } else { %>
           <a class="nav-link1" href="/users/login">Login</a>
-          <%}%>  
+          <%}%>
         </li>
+        <% if(user){%> <% if(user.admin == 0) { %>
+        <li class="nav-item">
+          <a class="nav-link1" href="/cadastro">Cadastro</a>
+        </li>
+        <% } %> <% } %>
         <li class="nav-item">
           <a class="nav-link1" href="/carrinho"
             ><i class="fas fa-shopping-cart" style="font-size: 22px"></i
@@ -40,13 +47,21 @@
 
         <li class="nav-item">
           <% if(user){ %>
-            <a class="nav-link"><i class="fas fa-user-circle"></i> <%= user.nome %> </a>
-            <% } else { %>  
-          <a class="nav-link" href="/users/login"><i class="fas fa-user"></i> Login</a>
-          <%}%>  
+          <a class="nav-link"
+            ><i class="fas fa-user-circle"></i> <%= user.nome %>
+          </a>
+          <% } else { %>
+          <a class="nav-link" href="/users/login"
+            ><i class="fas fa-user"></i> Login</a
+          >
+          <%}%>
         </li>
+        <% if(user){%> <% if(user.admin == 0) { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/cadastro">Cadastro</a>
+        </li>
+        <% } %> <% } %>
 
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="traço">|</a>
         </li>
