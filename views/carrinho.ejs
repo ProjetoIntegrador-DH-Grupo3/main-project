@@ -78,6 +78,7 @@
             $
             <input
               readonly
+              id="finalPrice-<%=item.id%> "
               name="finalPrice"
               type="text"
               class="final-price"
@@ -103,29 +104,20 @@
         id="item-delete-<%=item.id%>"
         action="/carrinho/delete/<%=item.id%>"
       ></form>
-
       <% } %>
-
       <div class="allItens">
-        <form action="">
-          <div class="cupom">
-            <label name="cupom">Digite seu cupom</label>
-            <div class="cupom-2">
-              <input type="text" name="cupom" />
-              <button name="cupom">Aplicar</button>
-            </div>
-          </div>
-        </form>
-
-        <div class="prices">
-          <span class="Subtotal">Subtotal $ 25</span>
-          <span class="Desconto">Desconto $ 25</span>
-          <span class="Total">Total $ 25</span>
-        </div>
+        <span
+          ><%if(produto.length == 1){%> <%=produto.length%> produto <%}else {%>
+          <%=produto.length %> produtos<%}%>
+        </span>
+        <span class="total">Total R$ <%=totalCarinho%></span>
       </div>
 
       <div class="confirm">
-        <button class="confirm-btn" type="submit">Finalizar Comprar</button>
+        <a href="/menu"
+          ><button class="continue-btn">Continuar comprando</button></a
+        >
+        <button class="confirm-btn" type="submit">Finalizar compra</button>
       </div>
     </div>
 

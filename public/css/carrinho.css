@@ -72,12 +72,14 @@ body {
   justify-content: flex-end;
   padding: 25px 0;
 }
+.continue-btn,
 .confirm-btn {
   background: rgb(255, 165, 0);
   opacity: 0.85;
   border: none;
   color: #111;
   padding: 10px 20px;
+  margin-left: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
@@ -88,6 +90,7 @@ body {
   letter-spacing: 1px;
 }
 
+.continue-btn:hover,
 .confirm-btn:hover {
   opacity: 1;
   color: #fff;
@@ -182,7 +185,7 @@ img {
   margin: 5px 0;
 }
 
-.cupom-2 > input {
+.cupom-2 > span {
   display: flex;
   padding: 10px 15px;
   margin-right: 5px;
@@ -207,17 +210,13 @@ img {
   border-bottom: 5px;
   letter-spacing: 1px;
 }
-
-.prices {
+.allItens {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 
-.prices > span {
-  margin: 0 10px;
-  font-size: 15px;
-}
-
-.prices .Total {
+.allItens .total {
+  flex-direction: row-reverse;
   font-size: 20px;
 }

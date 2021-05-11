@@ -8,7 +8,10 @@ const carrinhoController = {
       res.render("carrinhoVazio", { user });
     }
     if (produto) {
-      res.render("carrinho", { produto, user });
+      let totalCarinho = 0;
+      produto.forEach((produtoInfo) => (totalCarinho += produtoInfo.preco));
+      console.log(totalCarinho);
+      res.render("carrinho", { produto, user, totalCarinho });
     }
   },
   store: async (req, res) => {
@@ -21,7 +24,6 @@ const carrinhoController = {
     const produtoExistente = produto.find((p) => p.id === produtoId);
 
     const produtoInfo = await Produtos.findByPk(produtoId);
-
     if (produtoExistente) {
       produtosAtualizados = produto.map((p) =>
         p.id === produtoId
@@ -33,7 +35,9 @@ const carrinhoController = {
           : p
       );
     }
+
     req.session.produto = produtosAtualizados;
+
     if (req.session.produto) {
       return res.redirect("carrinho");
     }
@@ -49,6 +53,6 @@ const carrinhoController = {
     req.session.produto = item;
     res.redirect("/carrinho");
   },
-}
+};
 
 module.exports = carrinhoController;

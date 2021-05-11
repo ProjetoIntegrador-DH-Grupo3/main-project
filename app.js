@@ -38,7 +38,7 @@ app.use("/carrinho", carrinhoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  res.render("error404", { url:req.url})
+  res.render("error404", { url: req.url });
 });
 
 // error handler
