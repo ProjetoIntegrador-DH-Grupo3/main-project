@@ -3,7 +3,8 @@ const express = require("express");
 const indexController = {
   index: (req, res) => {
     const { user } = req.session;
-    res.render("index", { user });
+    const { session } = req;
+    res.render("index", { user, session });
   },
 
   contato: (req, res) => {
