@@ -12,8 +12,58 @@
     <title>Registro</title>
   </head>
   <body>
-    <!-- importando o header da pasta partials -->
-    <%- include('../partials/header') %>
+<!--  header   -->
+<div id="header" class="header">
+  <div class="leftSide">
+    <a href="/"><img src="/img/logo3.png" class="logo" alt="logo" /></a>
+  </div>
+  <div class="rightSide">
+    <div id="mHamburguer">
+      <input id="menu-hamburguer" type="checkbox" />
+
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link1" href="/menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link1" href="/users/login">
+            <i class="fas fa-user"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link1" href="/carrinho">
+            <i class="fas fa-shopping-cart" style="font-size: 22px"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="mNormal">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/login"
+            ><i class="fas fa-user"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="traço">|</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/carrinho"
+            ><i class="fas fa-shopping-cart" style="font-size: 22px"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--//header   -->
     <section class="fundoR">
       <div class="container">
         <div class="user siginBx">
