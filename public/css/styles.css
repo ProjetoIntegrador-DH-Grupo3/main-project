@@ -267,7 +267,7 @@
   color: #111;
   font-weight: 400;
   border: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   border-radius: 5px;
 }

@@ -112,4 +112,5 @@ input:checked ~ label .hamburguer {
     pointer-events: none;
     cursor: default;
     z-index: 9998;
+    align-items: center;
 }
