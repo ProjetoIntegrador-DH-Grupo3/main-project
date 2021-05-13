@@ -22,7 +22,7 @@
           <div class="formBx">
             <form method="POST">
               <h2>Fazer login</h2>
-              <% if (typeof error == 'undefined') {%> <% } else { %>
+              <% if (typeof error == 'undefined' && !user) {%> <% } else { %>
               <i id="exclamation" class="fa fa-exclamation-circle"></i>
               <span class="span">Usuário ou senha inválida!</span>
               <% } %> <input class="<%= typeof error == 'undefined'? "" :

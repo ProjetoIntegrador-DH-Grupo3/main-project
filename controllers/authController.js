@@ -28,7 +28,7 @@ const authController = {
       nome: usuario.nome,
       admin: usuario.permissao,
     };
-    console.log(req.session.user);
+
     return res.redirect("/");
   },
 };

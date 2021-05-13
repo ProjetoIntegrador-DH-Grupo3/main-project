@@ -230,3 +230,13 @@ img {
   flex-direction: row-reverse;
   font-size: 20px;
 }
+
+.fa-check,
+.fa-sad-cry {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+.obrigado {
+  font-size: 18px;
+  text-transform: uppercase;
+}

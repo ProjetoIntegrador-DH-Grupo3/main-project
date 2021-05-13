@@ -52,7 +52,7 @@ const carrinhoController = {
     res.redirect("/carrinho");
   },
   save: async (req, res) => {
-    const { user } = req.session;
+    const { user, produto } = req.session;
     const { totalCarrinho } = req.body;
     console.log(totalCarrinho);
 
@@ -60,7 +60,7 @@ const carrinhoController = {
       usuario_id: user.id,
       quantidade: totalCarrinho,
     });
-    res.send(req.body);
+    res.render("pedidoSucesso", { user });
   },
 };
 
