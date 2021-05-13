@@ -1,9 +1,9 @@
 const Swal = require("sweetalert2");
 
 module.exports = (req, res, next) => {
-  console.log(req.session.user);
-  if (req.session.user == undefined) {
-    res.send("erro");
+  const { user } = req.session;
+  if (user == undefined) {
+    res.render("pedidoErro", { user });
   }
 
   return next();

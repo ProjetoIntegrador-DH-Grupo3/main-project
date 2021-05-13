@@ -180,6 +180,10 @@ img {
   filter: blur(20px);
 }
 
+body.swal2-shown > [aria-hidden="true"] {
+  filter: blur(10px);
+}
+
 .allItens {
   display: flex;
   justify-content: space-between;
@@ -239,4 +243,15 @@ img {
 .obrigado {
   font-size: 18px;
   text-transform: uppercase;
+}
+.fa-times {
+  font-size: 80px;
+  margin: 20px 30px;
+}
+
+@media (max-width: 950px) {
+  .shopping-cart,
+  .item {
+    width: 100vh;
+  }
 }

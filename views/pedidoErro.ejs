@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- importando a font principal -->
+    <%- include('./partials/mainFont') %>
+    <!-- importando configurações HEAD e BootstrapCDN -->
+    <%- include('./partials/head') %>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/menuHamburguer.css" />
+    <link rel="stylesheet" href="/css/medias.css" />
+
+    <link rel="stylesheet" href="/css/carrinho.css" />
+    <link rel="stylesheet" href="/css/carrinhoVazio.css" />
+
+    <title>Erro</title>
+  </head>
+  <body>
+    <!-- importando o header da pasta partials -->
+    <%- include('./partials/header') %>
+
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title" id="footer"></div>
+
+      <!-- Product #1 -->
+
+      <div class="card-none">
+        <p>
+          <i class="fas fa-times"></i> <i class="fas fa-times"> </i>
+          <i class="fas fa-times"></i>
+        </p>
+
+        <p class="obrigado">
+          Você precisa estar logado para realizar um pedido
+        </p>
+
+        <div class="redirect">
+          <a href="/users/login">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- importando o footer da pasta partials -->
+    <%- include('./partials/footer') %>
+    <script src="/javascripts/carrinho.js"></script>
+  </body>
+</html>

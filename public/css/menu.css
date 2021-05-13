@@ -109,7 +109,7 @@ main {
 }
 
 .fundo-img {
-  width: 30vw;
+  width: 40vw;
   height: 15vh;
   display: flex;
   position: absolute;
@@ -132,20 +132,13 @@ main {
   }
 }
 
-@media (min-height: 769px) {
+@media (max-width: 950px) {
   .fundo-img {
-    width: 25vw;
-    height: 20vh;
-    display: flex;
-    position: absolute;
-    top: 12vh;
-    right: 50%;
+    display: none;
+    visibility: hidden;
   }
-}
-
-@media (max-width: 1041px) {
-  .fundo-img {
-    min-width: 45vw;
+  .menu-title {
+    margin-left:0;
   }
 }
 
