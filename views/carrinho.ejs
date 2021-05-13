@@ -5,19 +5,15 @@
     <%- include('./partials/mainFont') %>
     <!-- importando configurações HEAD e BootstrapCDN -->
     <%- include('./partials/head') %>
-
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/menuHamburguer.css" />
     <link rel="stylesheet" href="/css/medias.css" />
-
     <link rel="stylesheet" href="/css/carrinho.css" />
-
     <title>Carrinho</title>
   </head>
   <body>
     <!-- importando o header da pasta partials -->
     <%- include('./partials/header') %>
-
     <div class="shopping-cart" id="blur">
       <!-- Title -->
       <div class="title" id="footer">
@@ -26,10 +22,9 @@
         Meu CARRINHO
       </div>
       <hr />
-
       <!-- Product #1 -->
-      <% for (let item of produto) {%>
-      <form method="POST" class="form" action="/carrinho">
+      <form method="POST" class="form" action="/carrinho/save">
+        <% for (let item of produto) {%>
         <input type="text" name="produtoId" value="<%= item.id %>" hidden />
         <div class="item">
           <div class="image">
@@ -40,40 +35,41 @@
               alt=""
             />
           </div>
-
           <div class="description">
             <span><%= item.nome %></span>
             <span><%= item.descricao %> </span>
           </div>
-
           <div class="quantity">
             <button
               class="minus-btn"
               type="submit"
               name="minusBtn"
+              form="item-change-<%=item.id%>"
               onclick="decrement('<%=item.id%>')"
             >
               <img src="/img/minus.svg" alt="" class="s" />
             </button>
-
             <input
               readonly
               class="number"
               id="number-<%=item.id %>"
               type="text"
               name="quantidade"
+              form="item-change-<%=item.id%>"
               value="<%= item.quantidade %>"
             />
+            <input type="hidden" name="quantidade" value="<%= item.quantidade %>">
+            <input type="hidden" form="item-change-<%=item.id%>" name="produtoId" value="<%=item.id%>">
             <button
               class="plus-btn"
               type="submit"
               name="plusBtn"
+              form="item-change-<%=item.id%>"
               onclick="increment('<%=item.id%>')"
             >
               <img src="/img/plus.svg" alt="" class="s" />
             </button>
           </div>
-
           <div class="total-price">
             R$
             <input
@@ -85,7 +81,6 @@
               value="<%= item.preco %>"
             />
           </div>
-
           <div class="buttom-delete">
             <button
               class="delete-btn"
@@ -98,11 +93,20 @@
           </div>
         </div>
         <hr />
+      <% } %>
+      <input type="hidden" name="totalCarrinho" value="<%=totalCarinho%>">
+      <input type="submit" id="submit-form" style="display: none;">
       </form>
-      <form
+      <% for(let item of produto) {%>
+        <form
         method="POST"
         id="item-delete-<%=item.id%>"
         action="/carrinho/delete/<%=item.id%>"
+      ></form>
+        <form
+        method="POST"
+        id="item-change-<%=item.id%>"
+        action="/carrinho/"
       ></form>
       <% } %>
       <div class="allItens">
@@ -112,15 +116,13 @@
         </span>
         <span class="total">Total R$ <%=totalCarinho%></span>
       </div>
-
       <div class="confirm">
-        <a href="/menu"
-          ><button class="continue-btn">Continuar comprando</button></a
-        >
-        <button class="confirm-btn" type="submit">Finalizar compra</button>
+        
+          <button class="continue-btn"><a href="/menu">Continuar comprando</a></button>
+        
+        <label for="submit-form" class="confirm-btn">Finalizar compra</button>
       </div>
     </div>
-
     <!-- importando o footer da pasta partials -->
     <%- include('./partials/footer') %>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>

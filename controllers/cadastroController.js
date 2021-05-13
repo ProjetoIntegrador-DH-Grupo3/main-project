@@ -2,7 +2,8 @@ const { Produtos, Menu } = require("../sequelize/models");
 
 cadastroController = {
   index: (req, res) => {
-    res.render("cadastro");
+    const { user } = req.session;
+    res.render("cadastro", { user });
   },
   store: async (req, res) => {
     //fazendo a requisição da pagina
