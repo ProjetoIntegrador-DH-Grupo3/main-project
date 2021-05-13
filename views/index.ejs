@@ -49,6 +49,14 @@
                 <a class="nav-link1" href="/users/login">Login</a>
                 <%}%>  
               </li>
+              <% if(user){%>
+                <% if(user.admin == 0) { %>
+                  <li class="nav-item">
+                    <a class="nav-link1" href="/cadastro"><i class="fas fa-plus-square"></i>
+                      Add</a>
+                  </li>
+                <% } %> 
+                <% } %>
 
               <li class="nav-item">
                 <a class="nav-link1" href="/carrinho"><i class='fas fa-shopping-cart' style='font-size:22px;'></i></a>
@@ -78,7 +86,14 @@
                 <a class="nav-link" href="/users/login"> <i class="fas fa-user"></i> Login </a>
                 <%}%>  
               </li>
-
+              <% if(user){%>
+                <% if(user.admin == 0) { %>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cadastro"><i class="fas fa-plus-square"></i>
+                      Add</a>
+                  </li>
+                <% } %> 
+                <% } %>
               <li class="nav-item">
                 <a class="nav-link" href="#" id="traço">|</a>
               </li>

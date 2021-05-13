@@ -72,13 +72,16 @@ body {
   justify-content: flex-end;
   padding: 25px 0;
 }
+
+.continue-btn > a,
 .continue-btn,
 .confirm-btn {
+  height: 40px;
   background: rgb(255, 165, 0);
   opacity: 0.85;
   border: none;
   color: #111;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-left: 10px;
   text-align: center;
   text-decoration: none;
@@ -88,9 +91,16 @@ body {
   border-radius: 5px;
   border-bottom: 70px;
   letter-spacing: 1px;
+  list-style: none;
+  text-decoration: none;
+}
+.continue-btn > a {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.continue-btn:hover,
+.continue-btn:hover > a,
 .confirm-btn:hover {
   opacity: 1;
   color: #fff;
