@@ -21,7 +21,7 @@
 } */
 
 .redirect a {
- margin-top: 50px;
+ margin-top: 30px;
  align-items: center;
  display: flex;
  flex-direction: row;
@@ -57,3 +57,13 @@ p {
   padding-bottom: 10px;
 }
 
+.shopping-cart {
+  height: 40vh;
+}
+
+@media (max-width: 950px) {
+  .shopping-cart {
+    width:100vh;
+    height: 50vh;
+  }
+}
