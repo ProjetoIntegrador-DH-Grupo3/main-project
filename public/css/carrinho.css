@@ -170,6 +170,11 @@ img {
   filter: blur(20px);
 }
 
+body.swal2-shown > [aria-hidden="true"] {
+  filter: blur(10px);
+}
+
+
 .allItens {
   display: flex;
   justify-content: space-between;
@@ -219,4 +224,10 @@ img {
 .allItens .total {
   flex-direction: row-reverse;
   font-size: 20px;
+}
+
+@media (max-width: 950px) {
+  .shopping-cart, .item {
+    width:100vh;
+  }
 }
