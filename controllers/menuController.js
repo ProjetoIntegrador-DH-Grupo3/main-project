@@ -4,7 +4,7 @@ const menuController = {
   index: async (req, res) => {
     const { user } = req.session;
     const produtos = await Produtos.findAll({
-      order: [["createdAt", "DESC"]],
+      order: [["createdAt", "ASC"]],
     });
 
     res.render("menu", { user, produtos });

@@ -10,7 +10,7 @@ const usersController = {
     const { NomeUsuario, email, confirm_password, create_password } = req.body;
 
     if (confirm_password != create_password) {
-      res.redirect("login");
+      res.redirect("/users/registro/");
     } else {
       const dataAtual = new Date();
 

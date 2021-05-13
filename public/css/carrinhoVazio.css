@@ -1,6 +1,6 @@
 .card-none {
   padding: 45px;
-  height: 15vw;
+  height: 35vh;
   text-align: center;
 }
 
@@ -21,27 +21,27 @@
 } */
 
 .redirect a {
- margin-top: 50px;
- align-items: center;
- display: flex;
- flex-direction: row;
- text-decoration: none;
- letter-spacing: 1px;
- text-decoration:none;
- background:rgb(255, 165, 0);
- opacity:0.85;
- color: #fff;
- padding: 12px 18px;
- border-radius:5px;
- font-size:15px;
- text-transform: uppercase;
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: rgb(255, 165, 0);
+  opacity: 0.85;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
-.redirect a:hover{
+.redirect a:hover {
   opacity: 1;
 }
 
-.redirect a:focus{
+.redirect a:focus {
   opacity: 0.7;
 }
 
@@ -56,4 +56,8 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+.fa-check,
+.fa-sad-cry {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
