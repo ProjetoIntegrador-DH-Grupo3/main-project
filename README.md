@@ -10,7 +10,7 @@
 
 ## 📚 Informações sobre o projeto
 
-Esse projeto foi desenvolvido durante o curso de Full-Stack na Digital House, projeto integração. Todo projeto foi desenvolvido pelo meu time. 
+Esse projeto foi desenvolvido durante o curso de Full-Stack na Digital House, projeto integração. 
   
  * Criação do design, a identidade visual, wireframe, side map, criação de banco de dados (My SQL).
   
